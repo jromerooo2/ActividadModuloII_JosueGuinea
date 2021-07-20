@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
-            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.dgvDocentes = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminarEmpl = new System.Windows.Forms.Button();
@@ -46,7 +46,7 @@
             this.btnAgregarDoc = new System.Windows.Forms.Button();
             this.BtnConectar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,14 +143,14 @@
             this.txtNombres.Size = new System.Drawing.Size(245, 22);
             this.txtNombres.TabIndex = 1;
             // 
-            // dgvEmpleados
+            // dgvDocentes
             // 
-            this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Location = new System.Drawing.Point(45, 318);
-            this.dgvEmpleados.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvEmpleados.Name = "dgvEmpleados";
-            this.dgvEmpleados.Size = new System.Drawing.Size(1194, 233);
-            this.dgvEmpleados.TabIndex = 19;
+            this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDocentes.Location = new System.Drawing.Point(45, 318);
+            this.dgvDocentes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDocentes.Name = "dgvDocentes";
+            this.dgvDocentes.Size = new System.Drawing.Size(1194, 233);
+            this.dgvDocentes.TabIndex = 19;
             // 
             // groupBox2
             // 
@@ -236,14 +236,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 593);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dgvEmpleados);
+            this.Controls.Add(this.dgvDocentes);
             this.Controls.Add(this.groupBox2);
             this.Name = "frmRegistrarMaestros";
             this.Text = "frmRegistrarMaestros";
             this.Load += new System.EventHandler(this.frmRegistrarMaestros_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDocentes)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -260,7 +260,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.DataGridView dgvEmpleados;
+        private System.Windows.Forms.DataGridView dgvDocentes;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnEliminarEmpl;

@@ -13,6 +13,8 @@ namespace Login
 {
     public partial class frmRegistrarMaestros : Form
     {
+        public DataTable datosDocentes;
+
         public frmRegistrarMaestros()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace Login
         private void frmRegistrarMaestros_Load(object sender, EventArgs e)
         {
             CargarMaterias();
+            CargarGridDatos();
         }
 
         private void btnAgregarEmpl_Click(object sender, EventArgs e)
@@ -42,6 +45,12 @@ namespace Login
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
             }
+        }
+
+        void CargarGridDatos()
+        {
+            datosDocentes = ControladorMaestro.CargarDocentes_Controller();
+            dgvDocentes.DataSource = datosDocentes;
         }
 
         //CRUD

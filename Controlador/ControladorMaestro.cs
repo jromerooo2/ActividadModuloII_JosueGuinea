@@ -36,5 +36,10 @@ namespace Controlador
         {
             return ModelMaestro.RegistrarDocente(nombres, apellidos, idMateria);
         }
+
+        public static DataTable CargarDocentes_Controller()
+        {
+            return ModelMaestro.ObtenerListaDocentes();
+        }
     }
 }

@@ -48,5 +48,23 @@ namespace Modelo
                 return retorno;
             }
         }
+
+        public static DataTable ObtenerListaDocentes()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT * FROM tbmaestros";
+                MySqlCommand cmdtipodoc = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdtipodoc);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
     }
 }
