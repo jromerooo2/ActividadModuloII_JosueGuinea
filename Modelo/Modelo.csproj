@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModelEstudiante.cs" />
+    <Compile Include="ModelMaestro.cs" />
     <Compile Include="ModeloConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

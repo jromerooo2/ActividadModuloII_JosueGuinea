@@ -33,9 +33,9 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbMunicipios = new System.Windows.Forms.ComboBox();
-            this.cmbEstCivil = new System.Windows.Forms.ComboBox();
-            this.cmbTipoDocumento = new System.Windows.Forms.ComboBox();
+            this.cmbGenero = new System.Windows.Forms.ComboBox();
+            this.cmbGrados = new System.Windows.Forms.ComboBox();
+            this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.btnEliminarEmpl = new System.Windows.Forms.Button();
             this.btnActualizarEmpl = new System.Windows.Forms.Button();
             this.btnActualizarGrid = new System.Windows.Forms.Button();
-            this.btnAgregarEmpl = new System.Windows.Forms.Button();
+            this.btnAgregarDoc = new System.Windows.Forms.Button();
             this.BtnConectar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
@@ -64,9 +64,9 @@
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.dtpNacimiento);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.cmbMunicipios);
-            this.groupBox1.Controls.Add(this.cmbEstCivil);
-            this.groupBox1.Controls.Add(this.cmbTipoDocumento);
+            this.groupBox1.Controls.Add(this.cmbGenero);
+            this.groupBox1.Controls.Add(this.cmbGrados);
+            this.groupBox1.Controls.Add(this.cmbMateria);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -123,35 +123,35 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Fecha de Nacimiento";
             // 
-            // cmbMunicipios
+            // cmbGenero
             // 
-            this.cmbMunicipios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMunicipios.FormattingEnabled = true;
-            this.cmbMunicipios.Location = new System.Drawing.Point(559, 158);
-            this.cmbMunicipios.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbMunicipios.Name = "cmbMunicipios";
-            this.cmbMunicipios.Size = new System.Drawing.Size(165, 24);
-            this.cmbMunicipios.TabIndex = 8;
+            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Location = new System.Drawing.Point(559, 158);
+            this.cmbGenero.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbGenero.Name = "cmbGenero";
+            this.cmbGenero.Size = new System.Drawing.Size(165, 24);
+            this.cmbGenero.TabIndex = 8;
             // 
-            // cmbEstCivil
+            // cmbGrados
             // 
-            this.cmbEstCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEstCivil.FormattingEnabled = true;
-            this.cmbEstCivil.Location = new System.Drawing.Point(559, 106);
-            this.cmbEstCivil.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbEstCivil.Name = "cmbEstCivil";
-            this.cmbEstCivil.Size = new System.Drawing.Size(165, 24);
-            this.cmbEstCivil.TabIndex = 7;
+            this.cmbGrados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGrados.FormattingEnabled = true;
+            this.cmbGrados.Location = new System.Drawing.Point(559, 106);
+            this.cmbGrados.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbGrados.Name = "cmbGrados";
+            this.cmbGrados.Size = new System.Drawing.Size(165, 24);
+            this.cmbGrados.TabIndex = 7;
             // 
-            // cmbTipoDocumento
+            // cmbMateria
             // 
-            this.cmbTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoDocumento.FormattingEnabled = true;
-            this.cmbTipoDocumento.Location = new System.Drawing.Point(559, 57);
-            this.cmbTipoDocumento.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbTipoDocumento.Name = "cmbTipoDocumento";
-            this.cmbTipoDocumento.Size = new System.Drawing.Size(165, 24);
-            this.cmbTipoDocumento.TabIndex = 6;
+            this.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMateria.FormattingEnabled = true;
+            this.cmbMateria.Location = new System.Drawing.Point(559, 57);
+            this.cmbMateria.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMateria.Name = "cmbMateria";
+            this.cmbMateria.Size = new System.Drawing.Size(165, 24);
+            this.cmbMateria.TabIndex = 6;
             // 
             // label2
             // 
@@ -253,7 +253,7 @@
             this.groupBox2.Controls.Add(this.btnEliminarEmpl);
             this.groupBox2.Controls.Add(this.btnActualizarEmpl);
             this.groupBox2.Controls.Add(this.btnActualizarGrid);
-            this.groupBox2.Controls.Add(this.btnAgregarEmpl);
+            this.groupBox2.Controls.Add(this.btnAgregarDoc);
             this.groupBox2.Controls.Add(this.BtnConectar);
             this.groupBox2.Location = new System.Drawing.Point(826, 91);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -304,15 +304,16 @@
             this.btnActualizarGrid.Text = "Actualizar grid de datos";
             this.btnActualizarGrid.UseVisualStyleBackColor = true;
             // 
-            // btnAgregarEmpl
+            // btnAgregarDoc
             // 
-            this.btnAgregarEmpl.Location = new System.Drawing.Point(36, 31);
-            this.btnAgregarEmpl.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarEmpl.Name = "btnAgregarEmpl";
-            this.btnAgregarEmpl.Size = new System.Drawing.Size(148, 47);
-            this.btnAgregarEmpl.TabIndex = 10;
-            this.btnAgregarEmpl.Text = "Agregar Docente";
-            this.btnAgregarEmpl.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.Location = new System.Drawing.Point(36, 31);
+            this.btnAgregarDoc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarDoc.Name = "btnAgregarDoc";
+            this.btnAgregarDoc.Size = new System.Drawing.Size(148, 47);
+            this.btnAgregarDoc.TabIndex = 10;
+            this.btnAgregarDoc.Text = "Agregar Docente";
+            this.btnAgregarDoc.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.Click += new System.EventHandler(this.btnAgregarEmpl_Click);
             // 
             // BtnConectar
             // 
@@ -349,9 +350,9 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbMunicipios;
-        private System.Windows.Forms.ComboBox cmbEstCivil;
-        private System.Windows.Forms.ComboBox cmbTipoDocumento;
+        private System.Windows.Forms.ComboBox cmbGenero;
+        private System.Windows.Forms.ComboBox cmbGrados;
+        private System.Windows.Forms.ComboBox cmbMateria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -367,7 +368,7 @@
         private System.Windows.Forms.Button btnEliminarEmpl;
         private System.Windows.Forms.Button btnActualizarEmpl;
         private System.Windows.Forms.Button btnActualizarGrid;
-        private System.Windows.Forms.Button btnAgregarEmpl;
+        private System.Windows.Forms.Button btnAgregarDoc;
         private System.Windows.Forms.Button BtnConectar;
     }
 }
