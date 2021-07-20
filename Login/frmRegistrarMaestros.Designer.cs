@@ -31,18 +31,10 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
-            this.cmbGrados = new System.Windows.Forms.ComboBox();
             this.cmbMateria = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
@@ -62,18 +54,10 @@
             // 
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.dtpNacimiento);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.cmbGenero);
-            this.groupBox1.Controls.Add(this.cmbGrados);
             this.groupBox1.Controls.Add(this.cmbMateria);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
             this.groupBox1.Location = new System.Drawing.Point(45, 91);
@@ -88,7 +72,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(301, 90);
+            this.label10.Location = new System.Drawing.Point(36, 100);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 17);
@@ -97,96 +81,26 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(293, 110);
+            this.txtID.Location = new System.Drawing.Point(39, 120);
             this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(245, 22);
             this.txtID.TabIndex = 10;
             // 
-            // dtpNacimiento
-            // 
-            this.dtpNacimiento.CustomFormat = "yyyy-MM-dd";
-            this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNacimiento.Location = new System.Drawing.Point(293, 164);
-            this.dtpNacimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpNacimiento.Name = "dtpNacimiento";
-            this.dtpNacimiento.Size = new System.Drawing.Size(245, 22);
-            this.dtpNacimiento.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(305, 144);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(141, 17);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Fecha de Nacimiento";
-            // 
-            // cmbGenero
-            // 
-            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Location = new System.Drawing.Point(559, 158);
-            this.cmbGenero.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(165, 24);
-            this.cmbGenero.TabIndex = 8;
-            // 
-            // cmbGrados
-            // 
-            this.cmbGrados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGrados.FormattingEnabled = true;
-            this.cmbGrados.Location = new System.Drawing.Point(559, 106);
-            this.cmbGrados.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbGrados.Name = "cmbGrados";
-            this.cmbGrados.Size = new System.Drawing.Size(165, 24);
-            this.cmbGrados.TabIndex = 7;
-            // 
             // cmbMateria
             // 
             this.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMateria.FormattingEnabled = true;
-            this.cmbMateria.Location = new System.Drawing.Point(559, 57);
+            this.cmbMateria.Location = new System.Drawing.Point(293, 118);
             this.cmbMateria.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMateria.Name = "cmbMateria";
             this.cmbMateria.Size = new System.Drawing.Size(165, 24);
             this.cmbMateria.TabIndex = 6;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 86);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Dirección";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(555, 139);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Genero.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(555, 86);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 17);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Año.";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(551, 38);
+            this.label6.Location = new System.Drawing.Point(290, 97);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 17);
@@ -212,15 +126,6 @@
             this.label1.Size = new System.Drawing.Size(145, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombres del Docente";
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(39, 106);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(245, 82);
-            this.txtDireccion.TabIndex = 3;
             // 
             // txtApellidos
             // 
@@ -335,6 +240,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "frmRegistrarMaestros";
             this.Text = "frmRegistrarMaestros";
+            this.Load += new System.EventHandler(this.frmRegistrarMaestros_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
@@ -348,18 +254,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.DateTimePicker dtpNacimiento;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbGenero;
-        private System.Windows.Forms.ComboBox cmbGrados;
         private System.Windows.Forms.ComboBox cmbMateria;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.DataGridView dgvEmpleados;

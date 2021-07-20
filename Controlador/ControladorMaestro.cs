@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Modelo;
+using System.Data;
 
 namespace Controlador
 {
    public class ControladorMaestro
     {
+        public static DataTable ObtenerMaterias()
+        {
+            return ModelMaestro.CargarMaterias();
+        }
 
         //ATRIBUTOS
         public string nombres { get; set; }
@@ -29,7 +34,7 @@ namespace Controlador
         //CRUD
         public bool EnviarDatosController()
         {
-            return ModelMaestro.RegistrarMaestro(nombres, apellidos, iddocente, idMateria);
+            return ModelMaestro.RegistrarDocente(nombres, apellidos, idMateria);
         }
     }
 }

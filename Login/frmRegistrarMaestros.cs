@@ -17,16 +17,36 @@ namespace Login
         {
             InitializeComponent();
         }
+        private void frmRegistrarMaestros_Load(object sender, EventArgs e)
+        {
+            CargarMaterias();
+        }
 
         private void btnAgregarEmpl_Click(object sender, EventArgs e)
         {
             EnvioDatos();
         }
 
+        void CargarMaterias()
+        {
+            try
+            {
+                DataTable dataTipoDoc = ControladorMaestro.ObtenerMaterias();
+                cmbMateria.DataSource = dataTipoDoc;
+                cmbMateria.DisplayMember = "nombreMateria";
+                cmbMateria.ValueMember = "idMateria";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar las Materias .", "Error de carga",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+        }
 
         //CRUD
 
-        
+
         void EnvioDatos()
         {
             try
@@ -36,7 +56,7 @@ namespace Login
                 nombres = txtNombres.Text;
                 apellidos = txtApellidos.Text;
                 iddocente = Convert.ToInt16(txtID.Text);
-                idMateria = Convert.ToInt16(cmbGenero.SelectedValue);
+                idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
 
 
                 //INSTANCIAR OBJETO
@@ -56,5 +76,7 @@ namespace Login
                 MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
