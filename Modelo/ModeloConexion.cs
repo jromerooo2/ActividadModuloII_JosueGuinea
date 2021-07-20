@@ -13,10 +13,10 @@ namespace Modelo
         {
             MySqlConnection retorno;
             string server, database, user, password, puerto;
-            server = "127.0.0.1";
+            server = "sql10.freemysqlhosting.net";
             database = "dbgestionnotas";
-            user = "root";
-            password = "";
+            user = "sql10426558";
+            password = "MaJmEkn8n9";
             puerto = "3306";
             try
             {
