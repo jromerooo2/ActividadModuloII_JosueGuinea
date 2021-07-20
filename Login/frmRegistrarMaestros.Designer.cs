@@ -84,6 +84,7 @@
             this.txtID.Location = new System.Drawing.Point(39, 120);
             this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(245, 22);
             this.txtID.TabIndex = 10;
             // 
@@ -151,6 +152,7 @@
             this.dgvDocentes.Name = "dgvDocentes";
             this.dgvDocentes.Size = new System.Drawing.Size(1194, 233);
             this.dgvDocentes.TabIndex = 19;
+            this.dgvDocentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocentes_CellClick);
             // 
             // groupBox2
             // 

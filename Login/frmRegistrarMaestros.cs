@@ -28,6 +28,7 @@ namespace Login
         private void btnAgregarEmpl_Click(object sender, EventArgs e)
         {
             EnvioDatos();
+            CargarGridDatos();
         }
 
         void CargarMaterias()
@@ -61,17 +62,17 @@ namespace Login
             try
             {
                 string nombres, apellidos;
-                int  idMateria, iddocente;
+                int  idMateria;
                 nombres = txtNombres.Text;
                 apellidos = txtApellidos.Text;
-                iddocente = Convert.ToInt16(txtID.Text);
                 idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
 
+                //MessageBox.Show(Convert.ToString(cmbMateria.SelectedValue));
 
                 //INSTANCIAR OBJETO
-                ControladorMaestro objmaestro = new ControladorMaestro(nombres, apellidos, iddocente, idMateria);
+                ControladorMaestro objmaestro = new ControladorMaestro(nombres, apellidos, idMateria);
                 bool respuesta = objmaestro.EnviarDatosController();
-                if (respuesta == true)
+                if (respuesta)
                 {
                     MessageBox.Show("Usuario registrado exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -80,12 +81,33 @@ namespace Login
                     MessageBox.Show("Usuario no pudo ser registrado", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception)
+            catch (Exception er)
             {
-                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema."+ er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
+        void DataToTextBox()
+        {
+            int posicion = dgvDocentes.CurrentRow.Index;
 
+            txtNombres.Text = dgvDocentes[1, posicion].Value.ToString();
+            txtApellidos.Text = dgvDocentes[2, posicion].Value.ToString();
+            txtID.Text = dgvDocentes[0, posicion].Value.ToString();
+
+            //CMB Values
+
+            int idmateria = Convert.ToInt16(dgvDocentes[3, posicion].Value.ToString());
+            cmbMateria.DataSource = ControladorMaestro.CargarMateriaInner(idmateria);
+            cmbMateria.DisplayMember = "nombreMateria";
+            cmbMateria.ValueMember = "idMateria";
+        }
+
+        private void dgvDocentes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //enviar data a los textbox
+            DataToTextBox();
+        }
 
     }
 }
