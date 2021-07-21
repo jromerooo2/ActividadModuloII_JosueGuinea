@@ -55,8 +55,6 @@ namespace Login
         }
 
         //CRUD
-
-
         void EnvioDatos()
         {
             try
@@ -109,5 +107,9 @@ namespace Login
             DataToTextBox();
         }
 
+        private void cmbMateria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,27 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        void CargarMaterias()
+        {
+            try
+            {
+                DataTable dataEspecialidad = .ObtenerMaterias();
+                cmbEspecialidad.DataSource = dataEspecialidad;
+                cmbEspecialidad.DisplayMember = "nombreMateria";
+                cmbEspecialidad.ValueMember = "idMateria";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar las Materias .", "Error de carga",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+        }
+
+        private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
