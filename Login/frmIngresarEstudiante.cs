@@ -16,5 +16,20 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void frmIngresarEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarEmpl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarEmpl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

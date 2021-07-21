@@ -58,6 +58,12 @@
     <Compile Include="frmIngresarEstudiante.Designer.cs">
       <DependentUpon>frmIngresarEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmIngresoNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresoNotas.Designer.cs">
+      <DependentUpon>frmIngresoNotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresarEstudiante.resx">
       <DependentUpon>frmIngresarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresoNotas.resx">
+      <DependentUpon>frmIngresoNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
