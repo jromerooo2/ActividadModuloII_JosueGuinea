@@ -80,33 +80,48 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información del empleado";
-            // 
-            // btnLimpiarCampos
-            // 
             this.btnLimpiarCampos.Location = new System.Drawing.Point(27, 113);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(111, 38);
             this.btnLimpiarCampos.TabIndex = 12;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminarEstudiante
-            // 
+
+            this.btnLimpiar.Location = new System.Drawing.Point(27, 113);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(111, 38);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar campos";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnEliminarEstudiante.Location = new System.Drawing.Point(159, 69);
             this.btnEliminarEstudiante.Name = "btnEliminarEstudiante";
             this.btnEliminarEstudiante.Size = new System.Drawing.Size(111, 38);
             this.btnEliminarEstudiante.TabIndex = 14;
             this.btnEliminarEstudiante.Text = "Eliminar estudiante.";
             this.btnEliminarEstudiante.UseVisualStyleBackColor = true;
-            // 
-            // btnActualizarEstudiante
-            // 
+
+            this.btnEliminarEmpl.Location = new System.Drawing.Point(159, 69);
+            this.btnEliminarEmpl.Name = "btnEliminarEmpl";
+            this.btnEliminarEmpl.Size = new System.Drawing.Size(111, 38);
+            this.btnEliminarEmpl.TabIndex = 14;
+            this.btnEliminarEmpl.Text = "Eliminar estudiante.";
+            this.btnEliminarEmpl.UseVisualStyleBackColor = true;
+
             this.btnActualizarEstudiante.Location = new System.Drawing.Point(27, 69);
             this.btnActualizarEstudiante.Name = "btnActualizarEstudiante";
             this.btnActualizarEstudiante.Size = new System.Drawing.Size(111, 38);
             this.btnActualizarEstudiante.TabIndex = 11;
             this.btnActualizarEstudiante.Text = "Actualizar estudiante.";
             this.btnActualizarEstudiante.UseVisualStyleBackColor = true;
+
+            this.btnActualizarEmpl.Location = new System.Drawing.Point(27, 69);
+            this.btnActualizarEmpl.Name = "btnActualizarEmpl";
+            this.btnActualizarEmpl.Size = new System.Drawing.Size(111, 38);
+            this.btnActualizarEmpl.TabIndex = 11;
+            this.btnActualizarEmpl.Text = "Actualizar estudiante.";
+            this.btnActualizarEmpl.UseVisualStyleBackColor = true;
+            this.btnActualizarEmpl.Click += new System.EventHandler(this.btnActualizarEmpl_Click);
+
             // 
             // btnActualizarGrid
             // 
@@ -125,9 +140,18 @@
             this.btnAgregarEstudiante.TabIndex = 10;
             this.btnAgregarEstudiante.Text = "Agregar estudiante.";
             this.btnAgregarEstudiante.UseVisualStyleBackColor = true;
-            // 
+
+            this.btnAgregarEmpl.Location = new System.Drawing.Point(27, 25);
+            this.btnAgregarEmpl.Name = "btnAgregarEmpl";
+            this.btnAgregarEmpl.Size = new System.Drawing.Size(111, 38);
+            this.btnAgregarEmpl.TabIndex = 10;
+            this.btnAgregarEmpl.Text = "Agregar estudiante.";
+            this.btnAgregarEmpl.UseVisualStyleBackColor = true;
+            this.btnAgregarEmpl.Click += new System.EventHandler(this.btnAgregarEmpl_Click);
+
+            
             // BtnConectar
-            // 
+            
             this.BtnConectar.Location = new System.Drawing.Point(159, 113);
             this.BtnConectar.Name = "BtnConectar";
             this.BtnConectar.Size = new System.Drawing.Size(111, 38);
@@ -196,12 +220,20 @@
             // 
             // cmbGeneros
             // 
+
             this.cmbGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGeneros.FormattingEnabled = true;
             this.cmbGeneros.Location = new System.Drawing.Point(419, 128);
             this.cmbGeneros.Name = "cmbGeneros";
             this.cmbGeneros.Size = new System.Drawing.Size(125, 21);
             this.cmbGeneros.TabIndex = 8;
+
+            this.cmbMunicipios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMunicipios.FormattingEnabled = true;
+            this.cmbMunicipios.Location = new System.Drawing.Point(419, 128);
+            this.cmbMunicipios.Name = "cmbMunicipios";
+            this.cmbMunicipios.Size = new System.Drawing.Size(125, 21);
+            this.cmbMunicipios.TabIndex = 8;
             // 
             // cmbAnio
             // 
@@ -211,9 +243,13 @@
             this.cmbAnio.Name = "cmbAnio";
             this.cmbAnio.Size = new System.Drawing.Size(125, 21);
             this.cmbAnio.TabIndex = 7;
-            // 
-            // cmbEspecialidad
-            // 
+
+            this.cmbEstCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstCivil.FormattingEnabled = true;
+            this.cmbEstCivil.Location = new System.Drawing.Point(419, 86);
+            this.cmbEstCivil.Name = "cmbEstCivil";
+            this.cmbEstCivil.Size = new System.Drawing.Size(125, 21);
+            this.cmbEstCivil.TabIndex = 7;
             this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(419, 46);
@@ -221,6 +257,12 @@
             this.cmbEspecialidad.Size = new System.Drawing.Size(125, 21);
             this.cmbEspecialidad.TabIndex = 6;
             this.cmbEspecialidad.SelectedIndexChanged += new System.EventHandler(this.cmbEspecialidad_SelectedIndexChanged);
+            this.cmbTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoDocumento.FormattingEnabled = true;
+            this.cmbTipoDocumento.Location = new System.Drawing.Point(419, 46);
+            this.cmbTipoDocumento.Name = "cmbTipoDocumento";
+            this.cmbTipoDocumento.Size = new System.Drawing.Size(125, 21);
+            this.cmbTipoDocumento.TabIndex = 6;
             // 
             // label2
             // 
@@ -309,6 +351,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmIngresarEstudiante";
             this.Text = "frmIngresarEstudiante";
+            this.Load += new System.EventHandler(this.frmIngresarEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);

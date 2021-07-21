@@ -21,7 +21,7 @@ namespace Login
         {
             try
             {
-                DataTable dataEspecialidad = .ObtenerMaterias();
+                //DataTable dataEspecialidad = .ObtenerMaterias();
                 cmbEspecialidad.DataSource = dataEspecialidad;
                 cmbEspecialidad.DisplayMember = "nombreMateria";
                 cmbEspecialidad.ValueMember = "idMateria";
@@ -35,6 +35,22 @@ namespace Login
         }
 
         private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmIngresarEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarEmpl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarEmpl_Click(object sender, EventArgs e)
+
         {
 
         }
