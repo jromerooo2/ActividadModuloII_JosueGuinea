@@ -18,23 +18,36 @@ namespace Controlador
         //ATRIBUTOS
         public string nombres { get; set; }
         public string apellidos { get; set; }
-        public int iddocente { get; set; }
         public int idMateria { get; set; }
 
         //CONSTRUCTOR
-        public ControladorMaestro(string pnombres, string papellidos, int piddocente, int pidMateria)
+        public  ControladorMaestro(string pnombres, string papellidos, int pidMateria)
         {
             //Atributo = parametro
             nombres = pnombres;
             apellidos = papellidos;
-            iddocente = piddocente;
             idMateria = pidMateria;
         }
+
+        #region INNERJOIN
+        //inner join
+        public static DataTable CargarMateriaInner(int idMate)
+        {
+            return ModelMaestro.cargarMateriaInner(idMate);
+        }
+
+        #endregion
+
 
         //CRUD
         public bool EnviarDatosController()
         {
             return ModelMaestro.RegistrarDocente(nombres, apellidos, idMateria);
+        }
+
+        public static DataTable CargarDocentes_Controller()
+        {
+            return ModelMaestro.ObtenerListaDocentes();
         }
     }
 }
