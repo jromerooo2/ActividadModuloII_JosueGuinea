@@ -50,10 +50,6 @@ namespace Controlador
             return ModelMaestro.ObtenerListaDocentes();
         }
 
-        public static DataTable ObtenerListaDocentes()
-        {
-            throw new NotImplementedException();
-        }
 
         public static bool EliminarDocente(int id)
         {
