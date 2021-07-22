@@ -80,19 +80,27 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información del empleado";
+            // 
+            // btnLimpiarCampos
+            // 
             this.btnLimpiarCampos.Location = new System.Drawing.Point(27, 113);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(111, 38);
             this.btnLimpiarCampos.TabIndex = 12;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarEstudiante
+            // 
             this.btnEliminarEstudiante.Location = new System.Drawing.Point(159, 69);
             this.btnEliminarEstudiante.Name = "btnEliminarEstudiante";
             this.btnEliminarEstudiante.Size = new System.Drawing.Size(111, 38);
             this.btnEliminarEstudiante.TabIndex = 14;
             this.btnEliminarEstudiante.Text = "Eliminar estudiante.";
             this.btnEliminarEstudiante.UseVisualStyleBackColor = true;
-
+            // 
+            // btnActualizarEstudiante
+            // 
             this.btnActualizarEstudiante.Location = new System.Drawing.Point(27, 69);
             this.btnActualizarEstudiante.Name = "btnActualizarEstudiante";
             this.btnActualizarEstudiante.Size = new System.Drawing.Size(111, 38);
@@ -117,9 +125,9 @@
             this.btnAgregarEstudiante.TabIndex = 10;
             this.btnAgregarEstudiante.Text = "Agregar estudiante.";
             this.btnAgregarEstudiante.UseVisualStyleBackColor = true;
-            
+            // 
             // BtnConectar
-            
+            // 
             this.BtnConectar.Location = new System.Drawing.Point(159, 113);
             this.BtnConectar.Name = "BtnConectar";
             this.BtnConectar.Size = new System.Drawing.Size(111, 38);
@@ -188,14 +196,12 @@
             // 
             // cmbGeneros
             // 
-
             this.cmbGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGeneros.FormattingEnabled = true;
             this.cmbGeneros.Location = new System.Drawing.Point(419, 128);
             this.cmbGeneros.Name = "cmbGeneros";
             this.cmbGeneros.Size = new System.Drawing.Size(125, 21);
             this.cmbGeneros.TabIndex = 8;
-
             // 
             // cmbAnio
             // 
@@ -205,7 +211,9 @@
             this.cmbAnio.Name = "cmbAnio";
             this.cmbAnio.Size = new System.Drawing.Size(125, 21);
             this.cmbAnio.TabIndex = 7;
-
+            // 
+            // cmbEspecialidad
+            // 
             this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(419, 46);
@@ -237,9 +245,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(416, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Año.";
+            this.label7.Text = "Grado.";
             // 
             // label6
             // 
@@ -298,7 +306,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvEmpleados);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmIngresarEstudiante";
             this.Text = "frmIngresarEstudiante";
             this.Load += new System.EventHandler(this.frmIngresarEstudiante_Load);

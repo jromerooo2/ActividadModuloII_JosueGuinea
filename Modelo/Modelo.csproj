@@ -45,7 +45,6 @@
     <Compile Include="ModelEstudiante.cs" />
     <Compile Include="ModelMaestro.cs" />
     <Compile Include="ModeloConexion.cs" />
-    <Compile Include="ModeloIngresoNotas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
