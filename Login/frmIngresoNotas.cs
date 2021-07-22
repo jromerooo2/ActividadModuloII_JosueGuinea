@@ -90,8 +90,8 @@ namespace Login
 
         //private void frmIngresoNotas_Load(object sender, EventArgs e)
         //{
-        //        CargarDatos();
-        //        CargarGridDatos();
+        //    CargarDatos();
+        //    CargarGridDatos();
         //}
 
         //void EnvioDatos()
@@ -103,13 +103,10 @@ namespace Login
         //        //CREAR OBJETO DE CONTROLADOREMPLEADO
         //        ControladorMaestro objempleado;
         //        nombres = TxtNombres.Text;
-        //        apellidos = TxtApellidos.Text;
-        //        direccion = TxtDireccion.Text;
-        //        documento = TxtDocumento.Text;
-        //        nacimiento = dtNacimiento.Text;
-        //        nit = TxtNit.Text;
+
         //        idestadocivil = Convert.ToInt16(cmbEstCivil.SelectedValue);
         //        idtipodocumento = Convert.ToInt16(CmbTipoDocumento.SelectedValue);
+        //        idestadocivil = Convert.ToInt16(cmbEstCivil.SelectedValue); 
         //        idmunicipio = Convert.ToInt16(cmbMunicipios.SelectedValue);
         //        //INSTANCIAR OBJETO
         //        objempleado = new ControladorMaestro(nombres, apellidos, direccion, documento, nacimiento, idestadocivil, idtipodocumento, nit, idmunicipio);
@@ -133,5 +130,15 @@ namespace Login
         //    datosEmpleados = EmpleadosController.CargarEmpleados_Controller();
         //    dgvEmpleados.DataSource = datosEmpleados;
         //}
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
