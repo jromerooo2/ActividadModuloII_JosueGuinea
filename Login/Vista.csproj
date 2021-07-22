@@ -70,6 +70,12 @@
     <Compile Include="frmIngresoNotas.Designer.cs">
       <DependentUpon>frmIngresoNotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIngresoPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoPerfil.Designer.cs">
+      <DependentUpon>FrmIngresoPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresoNotas.resx">
       <DependentUpon>frmIngresoNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoPerfil.resx">
+      <DependentUpon>FrmIngresoPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
