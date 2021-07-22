@@ -141,12 +141,52 @@ namespace Login
 
         private void btnActualizarEmpl_Click(object sender, EventArgs e)
         {
+
+
             actualizarDocente();
         }
 
         private void actualizarDocente()
         {
-            //MessageBox.Show("Hi");
+            List<string> arrayDatosActu = new List<string>();
+
+            arrayDatosActu.Add(txtNombres.Text);
+            arrayDatosActu.Add(txtApellidos.Text);
+
+            if (Different(arrayDatosActu))
+            {
+                MessageBox.Show("Son iguales");
+            }
+            else
+            {
+                MessageBox.Show("Son diferentes");
+            }
+        }
+
+        private bool Different(List<string> arrayDatosNuevos)
+        {
+            int posicion = dgvDocentes.CurrentRow.Index;
+
+            string nombreOriginal = dgvDocentes[1, posicion].Value.ToString();
+            string apellidoOriginal = dgvDocentes[2, posicion].Value.ToString();
+            //for (var i = 0; i < arrayDatosNuevos.Count; i++)
+            //{
+            //    if (nombreOriginal == arrayDatosNuevos[i])
+            //    {
+
+            //    }
+            //}
+            if (nombreOriginal == arrayDatosNuevos[0] && apellidoOriginal == arrayDatosNuevos[1])
+            {
+                
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            
         }
 
         private void btnEliminarEmpl_Click(object sender, EventArgs e)
