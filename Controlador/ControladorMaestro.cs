@@ -54,5 +54,11 @@ namespace Controlador
         {
             throw new NotImplementedException();
         }
+
+        public static bool EliminarDocente(int id)
+        {
+
+            return ModelMaestro.DeleteMaestro(id);
+        }
     }
 }

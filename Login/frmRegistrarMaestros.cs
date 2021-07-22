@@ -111,5 +111,38 @@ namespace Login
         {
 
         }
+
+        private void btnActualizarEmpl_Click(object sender, EventArgs e)
+        {
+            actualizarDocente();
+        }
+
+        private void actualizarDocente()
+        {
+            //MessageBox.Show("Hi");
+        }
+
+        private void btnEliminarEmpl_Click(object sender, EventArgs e)
+        {
+            int id = getId();
+            bool res = ControladorMaestro.EliminarDocente(id);
+
+            if (res)
+            {
+                MessageBox.Show("successfully deleted");
+                CargarGridDatos();
+            }
+            else
+            {
+                MessageBox.Show("Not deleted");
+            }
+        }
+
+        private int getId()
+        {
+            int posicion = dgvDocentes.CurrentRow.Index;
+            int   id  = Convert.ToInt16(dgvDocentes[0, posicion].Value.ToString());
+            return id;
+        }
     }
 }
