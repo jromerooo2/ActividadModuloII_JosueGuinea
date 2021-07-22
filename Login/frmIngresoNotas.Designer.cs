@@ -190,7 +190,6 @@
             this.btnEliminarNota.TabIndex = 14;
             this.btnEliminarNota.Text = "Eliminar nota";
             this.btnEliminarNota.UseVisualStyleBackColor = true;
-            this.btnEliminarNota.Click += new System.EventHandler(this.btnEliminarNota_Click);
             // 
             // btnLimpiarCampos
             // 
