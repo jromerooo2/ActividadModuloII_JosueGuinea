@@ -35,7 +35,7 @@ namespace Modelo
             DataTable data;
             try
             {
-                string query = "SELECT * FROM tbmateria WHERE idTipoDocumento = ?param1";
+                string query = "SELECT * FROM tbmaterias WHERE idMateria = ?param1";
                 MySqlCommand cmdtipodoc = new MySqlCommand(string.Format(query), ModeloConexion.ObtenerConexion());
                 cmdtipodoc.Parameters.Add(new MySqlParameter("param1", id));
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmdtipodoc);
@@ -48,6 +48,8 @@ namespace Modelo
                 return data = null;
             }
         }
+
+
         #endregion
 
         //CRUD
@@ -105,6 +107,24 @@ namespace Modelo
             {
                 return retorno;
             }
+        }
+
+        public static bool UpdateMaestro( int id , string pnombres, string papellidos, int pidmateria)
+        {
+                bool retorno = false;
+                try
+                {
+                    //PROCESO DE INSERCIÓN
+                    MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbmaestros SET nombreMaestro='"+pnombres+ "', apellidoMaestro='" + papellidos+"', idMateria= '"+pidmateria+ "' WHERE idMaestro='"+id+"'"), ModeloConexion.ObtenerConexion());
+                    //VERIFICACIÓN DE INSERCIÓN
+                    retorno = Convert.ToBoolean(cmdupdate.ExecuteNonQuery());
+                    //RETORNO
+                    return retorno;
+                }
+                catch (Exception)
+                {
+                    return retorno;
+                }            
         }
 
     }

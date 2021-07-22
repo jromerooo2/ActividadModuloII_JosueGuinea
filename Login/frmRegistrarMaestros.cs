@@ -108,7 +108,7 @@ namespace Login
             }
             catch (Exception er)
             {
-                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema."+ er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oops!, ocurrió un error al registrar al docente, consulte con el administrador del sistema."+ er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
@@ -149,45 +149,40 @@ namespace Login
         private void actualizarDocente()
         {
             List<string> arrayDatosActu = new List<string>();
+            string nombres = txtNombres.Text;
+            arrayDatosActu.Add(nombres);
 
-            arrayDatosActu.Add(txtNombres.Text);
-            arrayDatosActu.Add(txtApellidos.Text);
+            string apellidos = txtApellidos.Text;
+            arrayDatosActu.Add(apellidos);
 
-            if (Different(arrayDatosActu))
+            int idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
+            int id = getId();
+            string s =  Convert.ToString(cmbMateria.SelectedValue);
+            arrayDatosActu.Add(s );
+
+
+            if (!Empty())
             {
-                MessageBox.Show("Son iguales");
+                //MessageBox.Show("yes they're diiff");
+
+                ControladorMaestro objemaestro = new ControladorMaestro(nombres, apellidos, idMateria);
+                bool res = ControladorMaestro.UpdateMaestro(id);
+                if (res)
+                {
+                    MessageBox.Show("Actualizado Correctamente", "Confirmacion de actualizacion");
+                    CargarGridDatos();
+                }
+                else
+                {
+                    MessageBox.Show("No pudo ser actualizado ", "Confirmacion de actualizacion");
+                }
             }
             else
-            {
-                MessageBox.Show("Son diferentes");
+            {                
+                MessageBox.Show("Para Actualizar por favor cambia los datos del docente");
             }
         }
 
-        private bool Different(List<string> arrayDatosNuevos)
-        {
-            int posicion = dgvDocentes.CurrentRow.Index;
-
-            string nombreOriginal = dgvDocentes[1, posicion].Value.ToString();
-            string apellidoOriginal = dgvDocentes[2, posicion].Value.ToString();
-            //for (var i = 0; i < arrayDatosNuevos.Count; i++)
-            //{
-            //    if (nombreOriginal == arrayDatosNuevos[i])
-            //    {
-
-            //    }
-            //}
-            if (nombreOriginal == arrayDatosNuevos[0] && apellidoOriginal == arrayDatosNuevos[1])
-            {
-                
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-            
-        }
 
         private void btnEliminarEmpl_Click(object sender, EventArgs e)
         {
@@ -210,6 +205,11 @@ namespace Login
             int posicion = dgvDocentes.CurrentRow.Index;
             int   id  = Convert.ToInt16(dgvDocentes[0, posicion].Value.ToString());
             return id;
+        }
+
+        private void cmbMateria_Click(object sender, EventArgs e)
+        {
+            CargarMaterias();
         }
     }
 }

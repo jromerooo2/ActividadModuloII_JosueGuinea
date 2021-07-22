@@ -16,9 +16,9 @@ namespace Controlador
         }
 
         //ATRIBUTOS
-        public string nombres { get; set; }
-        public string apellidos { get; set; }
-        public int idMateria { get; set; }
+        public static string nombres { get; set; }
+        public static string apellidos { get; set; }
+        public static int idMateria { get; set; }
 
         //CONSTRUCTOR
         public  ControladorMaestro(string pnombres, string papellidos, int pidMateria)
@@ -55,6 +55,11 @@ namespace Controlador
         {
 
             return ModelMaestro.DeleteMaestro(id);
+        }
+
+        public static bool UpdateMaestro(int id)
+        {
+            return ModelMaestro.UpdateMaestro(id, nombres, apellidos, idMateria);
         }
     }
 }
