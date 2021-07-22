@@ -29,6 +29,40 @@ namespace Modelo
                 return data = null;
             }
         }
+        public static DataTable CargarGrado()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT * FROM tbgrados";
+                MySqlCommand cmdGrados = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdGrados);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
+        public static DataTable CargarGenero()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT * FROM tbgeneros";
+                MySqlCommand cmdGenero = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdGenero);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
         public static class ModelTeacher
         {
                         

@@ -42,7 +42,7 @@
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbGeneros = new System.Windows.Forms.ComboBox();
-            this.cmbAnio = new System.Windows.Forms.ComboBox();
+            this.cmbGrados = new System.Windows.Forms.ComboBox();
             this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -142,7 +142,7 @@
             this.groupBox1.Controls.Add(this.dtpNacimiento);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.cmbGeneros);
-            this.groupBox1.Controls.Add(this.cmbAnio);
+            this.groupBox1.Controls.Add(this.cmbGrados);
             this.groupBox1.Controls.Add(this.cmbEspecialidad);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
@@ -203,14 +203,14 @@
             this.cmbGeneros.Size = new System.Drawing.Size(125, 21);
             this.cmbGeneros.TabIndex = 8;
             // 
-            // cmbAnio
+            // cmbGrados
             // 
-            this.cmbAnio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAnio.FormattingEnabled = true;
-            this.cmbAnio.Location = new System.Drawing.Point(419, 86);
-            this.cmbAnio.Name = "cmbAnio";
-            this.cmbAnio.Size = new System.Drawing.Size(125, 21);
-            this.cmbAnio.TabIndex = 7;
+            this.cmbGrados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGrados.FormattingEnabled = true;
+            this.cmbGrados.Location = new System.Drawing.Point(419, 86);
+            this.cmbGrados.Name = "cmbGrados";
+            this.cmbGrados.Size = new System.Drawing.Size(125, 21);
+            this.cmbGrados.TabIndex = 7;
             // 
             // cmbEspecialidad
             // 
@@ -334,7 +334,7 @@
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbGeneros;
-        private System.Windows.Forms.ComboBox cmbAnio;
+        private System.Windows.Forms.ComboBox cmbGrados;
         private System.Windows.Forms.ComboBox cmbEspecialidad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
