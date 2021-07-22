@@ -33,17 +33,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.combSeccion = new System.Windows.Forms.ComboBox();
-            this.combGrado = new System.Windows.Forms.ComboBox();
-            this.combPerfil = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnCambiarNota = new System.Windows.Forms.Button();
-            this.btnLimpiarCampos = new System.Windows.Forms.Button();
-            this.btnEliminarNota = new System.Windows.Forms.Button();
             this.combTrimestre = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.combPerfil = new System.Windows.Forms.ComboBox();
+            this.combGrado = new System.Windows.Forms.ComboBox();
+            this.combSeccion = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnEliminarNota = new System.Windows.Forms.Button();
+            this.btnLimpiarCampos = new System.Windows.Forms.Button();
+            this.btnCambiarNota = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
@@ -111,21 +111,30 @@
             this.groupBox1.Text = "Ingreso de Notas";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label5
+            // combTrimestre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(199, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 9;
+            this.combTrimestre.FormattingEnabled = true;
+            this.combTrimestre.Location = new System.Drawing.Point(238, 54);
+            this.combTrimestre.Name = "combTrimestre";
+            this.combTrimestre.Size = new System.Drawing.Size(167, 21);
+            this.combTrimestre.TabIndex = 16;
             // 
-            // combSeccion
+            // label3
             // 
-            this.combSeccion.FormattingEnabled = true;
-            this.combSeccion.Location = new System.Drawing.Point(21, 104);
-            this.combSeccion.Name = "combSeccion";
-            this.combSeccion.Size = new System.Drawing.Size(167, 21);
-            this.combSeccion.TabIndex = 12;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(235, 88);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Perfil";
+            // 
+            // combPerfil
+            // 
+            this.combPerfil.FormattingEnabled = true;
+            this.combPerfil.Location = new System.Drawing.Point(238, 101);
+            this.combPerfil.Name = "combPerfil";
+            this.combPerfil.Size = new System.Drawing.Size(167, 21);
+            this.combPerfil.TabIndex = 14;
             // 
             // combGrado
             // 
@@ -136,22 +145,21 @@
             this.combGrado.TabIndex = 13;
             this.combGrado.SelectedIndexChanged += new System.EventHandler(this.txtgrado_SelectedIndexChanged);
             // 
-            // combPerfil
+            // combSeccion
             // 
-            this.combPerfil.FormattingEnabled = true;
-            this.combPerfil.Location = new System.Drawing.Point(238, 101);
-            this.combPerfil.Name = "combPerfil";
-            this.combPerfil.Size = new System.Drawing.Size(167, 21);
-            this.combPerfil.TabIndex = 14;
+            this.combSeccion.FormattingEnabled = true;
+            this.combSeccion.Location = new System.Drawing.Point(21, 104);
+            this.combSeccion.Name = "combSeccion";
+            this.combSeccion.Size = new System.Drawing.Size(167, 21);
+            this.combSeccion.TabIndex = 12;
             // 
-            // label3
+            // label5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(235, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Perfil";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(199, 99);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 9;
             // 
             // groupBox2
             // 
@@ -167,22 +175,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ingreso de Notas";
             // 
-            // label9
+            // btnEliminarNota
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(199, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 13);
-            this.label9.TabIndex = 9;
-            // 
-            // btnCambiarNota
-            // 
-            this.btnCambiarNota.Location = new System.Drawing.Point(160, 52);
-            this.btnCambiarNota.Name = "btnCambiarNota";
-            this.btnCambiarNota.Size = new System.Drawing.Size(107, 23);
-            this.btnCambiarNota.TabIndex = 11;
-            this.btnCambiarNota.Text = "Cambiar nota";
-            this.btnCambiarNota.UseVisualStyleBackColor = true;
+            this.btnEliminarNota.Location = new System.Drawing.Point(18, 99);
+            this.btnEliminarNota.Name = "btnEliminarNota";
+            this.btnEliminarNota.Size = new System.Drawing.Size(107, 23);
+            this.btnEliminarNota.TabIndex = 14;
+            this.btnEliminarNota.Text = "Eliminar nota";
+            this.btnEliminarNota.UseVisualStyleBackColor = true;
             // 
             // btnLimpiarCampos
             // 
@@ -193,22 +193,22 @@
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
             // 
-            // btnEliminarNota
+            // btnCambiarNota
             // 
-            this.btnEliminarNota.Location = new System.Drawing.Point(18, 99);
-            this.btnEliminarNota.Name = "btnEliminarNota";
-            this.btnEliminarNota.Size = new System.Drawing.Size(107, 23);
-            this.btnEliminarNota.TabIndex = 14;
-            this.btnEliminarNota.Text = "Eliminar nota";
-            this.btnEliminarNota.UseVisualStyleBackColor = true;
+            this.btnCambiarNota.Location = new System.Drawing.Point(160, 52);
+            this.btnCambiarNota.Name = "btnCambiarNota";
+            this.btnCambiarNota.Size = new System.Drawing.Size(107, 23);
+            this.btnCambiarNota.TabIndex = 11;
+            this.btnCambiarNota.Text = "Cambiar nota";
+            this.btnCambiarNota.UseVisualStyleBackColor = true;
             // 
-            // combTrimestre
+            // label9
             // 
-            this.combTrimestre.FormattingEnabled = true;
-            this.combTrimestre.Location = new System.Drawing.Point(238, 54);
-            this.combTrimestre.Name = "combTrimestre";
-            this.combTrimestre.Size = new System.Drawing.Size(167, 21);
-            this.combTrimestre.TabIndex = 16;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(199, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 13);
+            this.label9.TabIndex = 9;
             // 
             // groupBox3
             // 
@@ -232,13 +232,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 463);
+            this.ClientSize = new System.Drawing.Size(787, 463);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmIngresoNotas";
             this.Text = "frmIngresoNotas";
-            this.Load += new System.EventHandler(this.frmIngresoNotas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
