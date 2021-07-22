@@ -10,9 +10,15 @@ namespace Controlador
 {
     public class ControladorEstudiante
     {
+        //Controlador sobre el combobox de especialidad.
         public static DataTable ObtenerEspecialidad()
         {
             return ModelEstudiante.CargarEspecialidad();
+        }
+
+        public static DataTable ObtenerGrado()
+        {
+            return ModelEstudiante.CargarGrado();
         }
     }
 }

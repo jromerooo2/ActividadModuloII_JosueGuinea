@@ -17,6 +17,7 @@ namespace Login
         {
             InitializeComponent();
             CargarEspecialidad();
+            CargarGrado();
         }
 
         void CargarEspecialidad()
@@ -24,17 +25,50 @@ namespace Login
             try
             {
                 DataTable dataEspecialidad = ControladorEstudiante.ObtenerEspecialidad();
-                cmbEspecialidad.DataSource = ControladorEstudiante.ObtenerEspecialidad();
+                cmbEspecialidad.DataSource = dataEspecialidad;
                 cmbEspecialidad.DisplayMember = "especialidad";
                 cmbEspecialidad.ValueMember = "idEspecialidad";
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al cargar las Materias .", "Error de carga",
+                MessageBox.Show("Error al cargar las especialidades .", "Error de carga",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
             }
         }
+
+        void CargarGrado()
+        {
+            try
+            {
+                DataTable dataGrado = ControladorEstudiante.ObtenerGrado();
+                cmbGrados.DataSource = dataGrado;
+                cmbGrados.DisplayMember = "grados";
+                cmbGrados.ValueMember = "idGrados";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar los grados academicos .", "Error de carga",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+        }
+        //void CargarGenero()
+        //{
+        //    try
+        //    {
+        //        DataTable dataGenero = ControladorEstudiante.ObtenerGenero();
+        //        cmbGeneros.DataSource = dataGenero;
+        //        cmbGeneros.DisplayMember = "genero";
+        //        cmbGeneros.ValueMember = "idGrados";
+        //    }
+        //    catch (Exception)
+        //    {
+        //        MessageBox.Show("Error al cargar los grados academicos .", "Error de carga",
+        //                         MessageBoxButtons.OK,
+        //                         MessageBoxIcon.Error);
+        //    }
+        //}
 
         private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
         {
