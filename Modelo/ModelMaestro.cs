@@ -28,26 +28,6 @@ namespace Modelo
                 return data = null;
             }
         }
-
-        public static DataTable CargarEspecialidad()
-        {
-            DataTable data;
-            try
-            {
-                string instruccion = "SELECT * FROM tbmespecialidad";
-                MySqlCommand cmdtipodoc = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
-                MySqlDataAdapter adp = new MySqlDataAdapter(cmdtipodoc);
-                data = new DataTable();
-                adp.Fill(data);
-                return data;
-            }
-            catch (Exception)
-            {
-                return data = null;
-            }
-        }
-
-
         #region InnerJoin
         //INNER JOIN
         public static DataTable cargarMateriaInner(int id)

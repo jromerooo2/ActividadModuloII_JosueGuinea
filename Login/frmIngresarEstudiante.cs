@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
 
 namespace Login
 {
@@ -15,16 +16,17 @@ namespace Login
         public frmIngresarEstudiante()
         {
             InitializeComponent();
+            CargarEspecialidad();
         }
 
-        void CargarMaterias()
+        void CargarEspecialidad()
         {
             try
             {
-                //DataTable dataEspecialidad = .ObtenerMaterias();
-                cmbEspecialidad.DataSource = dataEspecialidad;
-                cmbEspecialidad.DisplayMember = "nombreMateria";
-                cmbEspecialidad.ValueMember = "idMateria";
+                DataTable dataEspecialidad = ControladorEstudiante.ObtenerEspecialidad();
+                cmbEspecialidad.DataSource = ControladorEstudiante.ObtenerEspecialidad();
+                cmbEspecialidad.DisplayMember = "especialidad";
+                cmbEspecialidad.ValueMember = "idEspecialidad";
             }
             catch (Exception)
             {
