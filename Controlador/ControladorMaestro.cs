@@ -49,5 +49,12 @@ namespace Controlador
         {
             return ModelMaestro.ObtenerListaDocentes();
         }
+
+
+        public static bool EliminarDocente(int id)
+        {
+
+            return ModelMaestro.DeleteMaestro(id);
+        }
     }
 }

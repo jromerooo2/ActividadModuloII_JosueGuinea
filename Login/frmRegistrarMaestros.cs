@@ -27,9 +27,36 @@ namespace Login
 
         private void btnAgregarEmpl_Click(object sender, EventArgs e)
         {
-            EnvioDatos();
-            CargarGridDatos();
+            if (!Empty())
+            {
+                EnvioDatos();
+                CargarGridDatos();
+            }
+            else
+            {
+                MessageBox.Show("Por favor llena todos los campos");
+            }
+
         }
+
+        private bool Empty()
+        {
+            string nombres, apellidos;
+            int idMateria;
+            nombres = txtNombres.Text;
+            apellidos = txtApellidos.Text;
+            idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
+
+            if (!String.IsNullOrEmpty(nombres) && !String.IsNullOrEmpty(apellidos) && !String.IsNullOrEmpty(Convert.ToString(idMateria)))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
+         }
 
         void CargarMaterias()
         {
@@ -55,8 +82,6 @@ namespace Login
         }
 
         //CRUD
-
-
         void EnvioDatos()
         {
             try
@@ -109,5 +134,42 @@ namespace Login
             DataToTextBox();
         }
 
+        private void cmbMateria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizarEmpl_Click(object sender, EventArgs e)
+        {
+            actualizarDocente();
+        }
+
+        private void actualizarDocente()
+        {
+            //MessageBox.Show("Hi");
+        }
+
+        private void btnEliminarEmpl_Click(object sender, EventArgs e)
+        {
+            int id = getId();
+            bool res = ControladorMaestro.EliminarDocente(id);
+
+            if (res)
+            {
+                MessageBox.Show("successfully deleted");
+                CargarGridDatos();
+            }
+            else
+            {
+                MessageBox.Show("Not deleted");
+            }
+        }
+
+        private int getId()
+        {
+            int posicion = dgvDocentes.CurrentRow.Index;
+            int   id  = Convert.ToInt16(dgvDocentes[0, posicion].Value.ToString());
+            return id;
+        }
     }
 }

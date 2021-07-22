@@ -28,7 +28,6 @@ namespace Modelo
                 return data = null;
             }
         }
-
         #region InnerJoin
         //INNER JOIN
         public static DataTable cargarMateriaInner(int id)
@@ -87,5 +86,26 @@ namespace Modelo
                 return data = null;
             }
         }
+
+        public static bool DeleteMaestro( int pid)
+        {
+            bool retorno = false;
+            try
+            {
+                //PROCESO DE INSERCIÓN
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("DELETE FROM tbmaestros WHERE idMaestro=" + pid), ModeloConexion.ObtenerConexion());
+
+                //VERIFICACIÓN DE INSERCIÓN
+                retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
+                
+                //RETORNO
+                return retorno;
+            }
+            catch (Exception)
+            {
+                return retorno;
+            }
+        }
+
     }
 }
