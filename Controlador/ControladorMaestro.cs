@@ -49,5 +49,10 @@ namespace Controlador
         {
             return ModelMaestro.ObtenerListaDocentes();
         }
+
+        public static DataTable ObtenerListaDocentes()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
