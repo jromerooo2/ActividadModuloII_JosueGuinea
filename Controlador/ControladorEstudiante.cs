@@ -20,5 +20,10 @@ namespace Controlador
         {
             return ModelEstudiante.CargarGrado();
         }
+
+        public static DataTable ObtenerGenero()
+        {
+            return ModelEstudiante.CargarGenero();
+        }
     }
 }

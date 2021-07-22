@@ -46,6 +46,23 @@ namespace Modelo
                 return data = null;
             }
         }
+        public static DataTable CargarGenero()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT * FROM tbgeneros";
+                MySqlCommand cmdGenero = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdGenero);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
         public static class ModelTeacher
         {
                         
