@@ -26,12 +26,21 @@ namespace Login
             user = txtUserName.Text;
             Cpassword = txtConfirmPassword.Text;
             int rol = comboBox1.SelectedIndex;
+            //MessageBox.Show(Convert.ToString(rol));
 
             if (!String.IsNullOrEmpty(password) && !String.IsNullOrEmpty(user) && !String.IsNullOrEmpty(Cpassword))
             {
                 //MessageBox.Show("Not empty");
                 bool res = ControladorUsuario.AgregarUsuario(password, user, rol);
-                
+
+                if (res)
+                {
+                    MessageBox.Show("Successfully Created User");
+                }
+                else
+                {
+                    MessageBox.Show("User No pudo ser creado");
+                }
 
             }
             else
