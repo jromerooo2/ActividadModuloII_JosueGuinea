@@ -27,9 +27,36 @@ namespace Login
 
         private void btnAgregarEmpl_Click(object sender, EventArgs e)
         {
-            EnvioDatos();
-            CargarGridDatos();
+            if (!Empty())
+            {
+                EnvioDatos();
+                CargarGridDatos();
+            }
+            else
+            {
+                MessageBox.Show("Por favor llena todos los campos");
+            }
+
         }
+
+        private bool Empty()
+        {
+            string nombres, apellidos;
+            int idMateria;
+            nombres = txtNombres.Text;
+            apellidos = txtApellidos.Text;
+            idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
+
+            if (!String.IsNullOrEmpty(nombres) && !String.IsNullOrEmpty(apellidos) && !String.IsNullOrEmpty(Convert.ToString(idMateria)))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
+         }
 
         void CargarMaterias()
         {
