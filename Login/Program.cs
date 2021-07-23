@@ -16,11 +16,7 @@ namespace Login
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
- 
-            Application.Run(new FrmIngresoPerfil());
-
-            Application.Run(new frmIngresarEstudiante());
-
+           Application.Run(new FrmIngresoPerfil());
         }
     }
 }
