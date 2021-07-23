@@ -12,13 +12,13 @@ namespace Modelo
     public class ModelEstudiante
     {
         //CRUD
-        public static bool RegistrarEstudiante(string pnommbres, string papellidos, int pidEspecialidad, int pidGrado, int pidGenero)
+        public static bool RegistrarEstudiante(string pnommbres, string papellidos, string direccion, int pidEspecialidad, int pidGrado, int pidGenero)
         {
             bool retorno = false;
             try
             {
                 //PROCESO DE INSERCIÓN.
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbmaestros(nombreAlumno, apellidoalumno, idSeccion, idEstado) VALUES('{0}','{1}','{2}','{3}','{4}')", pnommbres, papellidos, pidEspecialidad, pidGrado, pidGenero), ModeloConexion.ObtenerConexion());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbalumnos(nombreAlumno, apellidoAlumno,direccion, idSeccion, idEstado,idEspecialidad) VALUES('{0}','{1}','{2}','{3}','{4}','{5}')", pnommbres, papellidos, direccion, pidGrado, pidGenero, pidEspecialidad), ModeloConexion.ObtenerConexion());
                 //VERIFICACIÓN DE INSERCIÓN.
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 //RETORNO
@@ -47,6 +47,26 @@ namespace Modelo
                 return data = null;
             }
         }
+
+
+        public static DataTable ObtenerListaAlumnos2()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT nombreAlumno, apellidoAlumno, Nota FROM tbalumnos";
+                MySqlCommand cmdalumnos = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdalumnos);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
+
 
         //Cargar la especialidad de la base de datos
         public static DataTable CargarEspecialidad()
