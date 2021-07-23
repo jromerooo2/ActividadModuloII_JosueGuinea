@@ -16,10 +16,14 @@ namespace Login
         public frmMenu()
         {
             InitializeComponent();
-            if (AtributosLogin.rolUsuario != 1)
+            if (AtributosLogin.rolUsuario != 0)
             {
                 MessageBox.Show("Esta vista no es para ti");
                 this.Close();
+            }
+            else
+            {
+                txtNombre.Text = AtributosLogin.usuario;
             }
 
         }

@@ -16,12 +16,15 @@ namespace Login
         public frmMenuDocentes()
         {
             InitializeComponent();
-            if (AtributosLogin.rolUsuario != 2)
+            if (AtributosLogin.rolUsuario == 0)
             {
                 MessageBox.Show("Esta vista no es para ti");
                 this.Close();
             }
-
+            else
+            {
+                txtNombre.Text = AtributosLogin.usuario;
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -44,6 +47,11 @@ namespace Login
             FrmIngresoPerfil form = new FrmIngresoPerfil();
             form.Show();
             this.Hide();
+        }
+
+        private void frmMenuDocentes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

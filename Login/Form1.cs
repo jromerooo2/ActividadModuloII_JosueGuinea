@@ -48,24 +48,24 @@ namespace Login
             bool acceso = ControladorLogin.Acceso_Controller();
             int rol = ControladorLogin.GetUserRol();
 
-            if (acceso && rol == 2)
+            if (acceso && rol == 1)
             {
-                MessageBox.Show("Rol de usuario " +  AtributosLogin.rolUsuario);
+                //MessageBox.Show("Rol de usuario " +  AtributosLogin.rolUsuario);
                 frmMenuDocentes menu = new frmMenuDocentes();
                 menu.Show();
                 this.Hide();
             }
-            else if (acceso && rol == 1)
+            else if (acceso && rol == 0)
             {
-                MessageBox.Show("Rol de usuario " + AtributosLogin.rolUsuario);
+                //MessageBox.Show("Rol de usuario " + AtributosLogin.rolUsuario);
                 frmMenu menu = new frmMenu();
                 menu.Show();
                 this.Hide();
             }
-            else if (acceso && rol == 3)
+            else if (acceso && rol == 2)
             {
-                MessageBox.Show("Este usuario tiene rol 2 " + rol);
-                frmMenu menu = new frmMenu();
+                //MessageBox.Show("Este usuario tiene rol 2 " + rol);
+                frmAdminMenu menu = new frmAdminMenu();
                 menu.Show();
                 this.Hide();
             }

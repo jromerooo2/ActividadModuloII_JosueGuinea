@@ -51,6 +51,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.Label();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
@@ -296,6 +297,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.txtNombre);
             this.panel1.Controls.Add(button5);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.button4);
@@ -351,11 +353,22 @@
             this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11.2F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(29, 204);
+            this.label8.Location = new System.Drawing.Point(17, 201);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 23);
+            this.label8.Size = new System.Drawing.Size(123, 23);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Bienvenido, Estudiante";
+            this.label8.Text = "Bienvenido, ";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.AutoSize = true;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.2F, System.Drawing.FontStyle.Bold);
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtNombre.Location = new System.Drawing.Point(137, 201);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(0, 23);
+            this.txtNombre.TabIndex = 12;
             // 
             // frmMenu
             // 
@@ -405,5 +418,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label txtNombre;
     }
 }
