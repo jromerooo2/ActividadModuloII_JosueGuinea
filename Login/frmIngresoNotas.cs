@@ -140,5 +140,18 @@ namespace Login
         {
 
         }
+
+        public DataTable datosEstudiantes;
+
+        void CargarGridDatos()
+        {
+            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller();
+            dgvAlumnos.DataSource = datosEstudiantes;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CargarGridDatos();
+        }
     }
 }

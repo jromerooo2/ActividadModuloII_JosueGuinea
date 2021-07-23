@@ -45,13 +45,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblDescripcionPerfil = new System.Windows.Forms.Label();
+            this.lblFchInicio = new System.Windows.Forms.Label();
+            this.lblFchFin = new System.Windows.Forms.Label();
+            this.lblPorcentajeAct = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.dgvAlumnos = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -141,6 +150,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -188,94 +198,166 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(210, 17);
+            this.label2.Location = new System.Drawing.Point(219, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 18);
+            this.label2.Size = new System.Drawing.Size(142, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Descripcioon de perfil";
+            this.label2.Text = "Descripcion de perfil";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 17);
+            this.label1.Location = new System.Drawing.Point(52, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
-            // label6
+            // lbl
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 159);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 16);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Actividad cotidiana";
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(30, 159);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(122, 16);
+            this.lbl.TabIndex = 27;
+            this.lbl.Text = "Actividad cotidiana";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(9, 159);
+            this.label7.Location = new System.Drawing.Point(21, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 16);
             this.label7.TabIndex = 28;
             this.label7.Text = "1";
             // 
+            // lblDescripcionPerfil
+            // 
+            this.lblDescripcionPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDescripcionPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionPerfil.Location = new System.Drawing.Point(158, 102);
+            this.lblDescripcionPerfil.Name = "lblDescripcionPerfil";
+            this.lblDescripcionPerfil.Size = new System.Drawing.Size(329, 128);
+            this.lblDescripcionPerfil.TabIndex = 29;
+            this.lblDescripcionPerfil.Text = resources.GetString("lblDescripcionPerfil.Text");
+            // 
+            // lblFchInicio
+            // 
+            this.lblFchInicio.AutoSize = true;
+            this.lblFchInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFchInicio.Location = new System.Drawing.Point(534, 159);
+            this.lblFchInicio.Name = "lblFchInicio";
+            this.lblFchInicio.Size = new System.Drawing.Size(72, 16);
+            this.lblFchInicio.TabIndex = 30;
+            this.lblFchInicio.Text = "2021-09-10";
+            // 
+            // lblFchFin
+            // 
+            this.lblFchFin.AutoSize = true;
+            this.lblFchFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFchFin.Location = new System.Drawing.Point(645, 159);
+            this.lblFchFin.Name = "lblFchFin";
+            this.lblFchFin.Size = new System.Drawing.Size(72, 16);
+            this.lblFchFin.TabIndex = 31;
+            this.lblFchFin.Text = "2021-09-20";
+            // 
+            // lblPorcentajeAct
+            // 
+            this.lblPorcentajeAct.AutoSize = true;
+            this.lblPorcentajeAct.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeAct.Location = new System.Drawing.Point(781, 159);
+            this.lblPorcentajeAct.Name = "lblPorcentajeAct";
+            this.lblPorcentajeAct.Size = new System.Drawing.Size(44, 16);
+            this.lblPorcentajeAct.TabIndex = 32;
+            this.lblPorcentajeAct.Text = "30.0%";
+            // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(158, 102);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(329, 128);
-            this.label9.TabIndex = 29;
-            this.label9.Text = resources.GetString("label9.Text");
+            this.label9.Size = new System.Drawing.Size(32, 18);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "No.";
             // 
-            // label18
+            // panel2
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(534, 159);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 16);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "2021-09-10";
+            this.panel2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label26);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Location = new System.Drawing.Point(9, 233);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(852, 53);
+            this.panel2.TabIndex = 33;
             // 
-            // label19
+            // label21
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(645, 159);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(72, 16);
-            this.label19.TabIndex = 31;
-            this.label19.Text = "2021-09-20";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(3, 17);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(32, 18);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "No.";
             // 
-            // label20
+            // label26
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(781, 159);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(44, 16);
-            this.label20.TabIndex = 32;
-            this.label20.Text = "30.0%";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(203, 17);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(62, 18);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Nombre";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(757, 17);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(40, 18);
+            this.label22.TabIndex = 6;
+            this.label22.Text = "Nota";
+            // 
+            // dgvAlumnos
+            // 
+            this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlumnos.Location = new System.Drawing.Point(9, 310);
+            this.dgvAlumnos.Name = "dgvAlumnos";
+            this.dgvAlumnos.Size = new System.Drawing.Size(855, 212);
+            this.dgvAlumnos.TabIndex = 34;
+            this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(30, 334);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 35;
             // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 316);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(876, 534);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.dgvAlumnos);
+            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.lblPorcentajeAct);
+            this.Controls.Add(this.lblFchFin);
+            this.Controls.Add(this.lblFchInicio);
+            this.Controls.Add(this.lblDescripcionPerfil);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -290,6 +372,9 @@
             this.Text = "Ingreso de notas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,11 +397,18 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDescripcionPerfil;
+        private System.Windows.Forms.Label lblFchInicio;
+        private System.Windows.Forms.Label lblFchFin;
+        private System.Windows.Forms.Label lblPorcentajeAct;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.DataGridView dgvAlumnos;
+        private System.Windows.Forms.Label label6;
     }
 }
