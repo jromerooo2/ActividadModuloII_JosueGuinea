@@ -29,6 +29,42 @@ namespace Modelo
                 return retorno;
             }
         }
+        public static bool EliminarEstudiante(int pid)
+        {
+            bool retorno = false;
+            try
+            {
+                //PROCESO DE INSERCIÓN
+                MySqlCommand cmddelete = new MySqlCommand(string.Format("DELETE FROM tbalumnos WHERE idAlumno=" + pid), ModeloConexion.ObtenerConexion());
+
+                //VERIFICACIÓN DE INSERCIÓN
+                retorno = Convert.ToBoolean(cmddelete.ExecuteNonQuery());
+
+                //RETORNO
+                return retorno;
+            }
+            catch (Exception)
+            {
+                return retorno;
+            }
+        }
+        public static bool ActualizarEstudiante(int id, string pnombres, string papellidos, string pdireccion, int pidMateria, int pidEspecialidad, int pidSeccion)
+        {
+            bool retorno = false;
+            try
+            {
+                //PROCESO DE INSERCIÓN
+                MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbalumnos SET nombreAlumno='" + pnombres + "', apellidoAlumno='" + papellidos + "', direccion = '" + pdireccion + "', idMateria ='" +pidMateria+ "', idEspecialidad = '"+pidEspecialidad+"', idSeccion = '"+pidSeccion+"' WHERE idAlumno ='" + id + "'"), ModeloConexion.ObtenerConexion());
+                //VERIFICACIÓN DE INSERCIÓN
+                retorno = Convert.ToBoolean(cmdupdate.ExecuteNonQuery());
+                //RETORNO
+                return retorno;
+            }
+            catch (Exception)
+            {
+                return retorno;
+            }
+        }
 
         public static DataTable ObtenerListaAlumnos()
         {

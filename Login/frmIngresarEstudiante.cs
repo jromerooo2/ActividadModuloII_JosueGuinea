@@ -149,5 +149,34 @@ namespace Login
         {
             
         }
+
+
+        private int getId()
+        {
+            int posicion = dgvEstudiantes.CurrentRow.Index;
+            int id = Convert.ToInt16(dgvEstudiantes[0, posicion].Value.ToString());
+            return id;
+        }
+
+        private void btnEliminarEstudiante_Click(object sender, EventArgs e)
+        {
+            int id = getId();
+            bool res = ControladorEstudiante.EliminarEstudiante(id);
+
+            if (res)
+            {
+                MessageBox.Show("successfully deleted");
+                CargarGridDatos();
+            }
+            else
+            {
+                MessageBox.Show("Not deleted");
+            }
+        }
+
+        private void btnActualizarEstudiante_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
