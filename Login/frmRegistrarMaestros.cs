@@ -231,5 +231,11 @@ namespace Login
         {
             CargarMaterias();
         }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAddUser user = new frmAddUser();
+        }
     }
 }

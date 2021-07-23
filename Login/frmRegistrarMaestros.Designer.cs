@@ -39,7 +39,7 @@
             this.txtNombres = new System.Windows.Forms.TextBox();
             this.dgvDocentes = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnAddUser = new System.Windows.Forms.Button();
             this.btnEliminarEmpl = new System.Windows.Forms.Button();
             this.btnActualizarEmpl = new System.Windows.Forms.Button();
             this.btnActualizarGrid = new System.Windows.Forms.Button();
@@ -158,7 +158,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnLimpiar);
+            this.groupBox2.Controls.Add(this.btnAddUser);
             this.groupBox2.Controls.Add(this.btnEliminarEmpl);
             this.groupBox2.Controls.Add(this.btnActualizarEmpl);
             this.groupBox2.Controls.Add(this.btnActualizarGrid);
@@ -173,15 +173,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información del empleado";
             // 
-            // btnLimpiar
+            // btnAddUser
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(36, 139);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(148, 47);
-            this.btnLimpiar.TabIndex = 12;
-            this.btnLimpiar.Text = "Limpiar campos";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnAddUser.Location = new System.Drawing.Point(36, 139);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(148, 47);
+            this.btnAddUser.TabIndex = 12;
+            this.btnAddUser.Text = "Agregar un Usuario";
+            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnEliminarEmpl
             // 
@@ -269,7 +270,7 @@
         private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.DataGridView dgvDocentes;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnEliminarEmpl;
         private System.Windows.Forms.Button btnActualizarEmpl;
         private System.Windows.Forms.Button btnActualizarGrid;

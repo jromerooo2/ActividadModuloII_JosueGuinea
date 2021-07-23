@@ -13,7 +13,11 @@ namespace Controlador
     {
         public static bool Acceso_Controller()
         {
-            return ModelLogin.Acceso(usuario,passwordUsuario,rolUsuario);
+            return ModelLogin.Acceso(usuario,passwordUsuario);
+        }
+        public static int GetUserRol()
+        {
+            return ModelLogin.GetRol(usuario, passwordUsuario);
         }
     }
     public class AtributosLogin

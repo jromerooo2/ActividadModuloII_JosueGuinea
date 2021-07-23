@@ -43,16 +43,17 @@ namespace Login
         {
             
             AtributosLogin.usuario = txtUsuario.Text;
-            AtributosLogin.rolUsuario = 2;
             string passwordUsuariocrp = Encrypt.GetMD5(txtPassword.Text);
             AtributosLogin.passwordUsuario = passwordUsuariocrp;
             bool acceso = ControladorLogin.Acceso_Controller();
-            if (acceso==true )
+            int rol = ControladorLogin.GetUserRol();
+
+            if (acceso && rol == 2)
             {
+                MessageBox.Show("Este usuario tiene rol 2 " +rol);
                 frmMenu menu = new frmMenu();
                 menu.Show();
                 this.Hide();
-
             }
             else
             {
