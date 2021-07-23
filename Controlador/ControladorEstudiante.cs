@@ -58,5 +58,10 @@ namespace Controlador
         {
             return ModelEstudiante.ObtenerListaAlumnos();
         }
+
+        public static DataTable CargarAlumnos_Controller2()
+        {
+            return ModelEstudiante.ObtenerListaAlumnos2();
+        }
     }
 }

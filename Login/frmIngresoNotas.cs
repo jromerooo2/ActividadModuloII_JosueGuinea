@@ -16,6 +16,7 @@ namespace Login
         public frmIngresoNotas()
         {
             InitializeComponent();
+            CargarGridDatos();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -145,13 +146,14 @@ namespace Login
 
         void CargarGridDatos()
         {
-            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller();
+            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller2();
             dgvAlumnos.DataSource = datosEstudiantes;
         }
 
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CargarGridDatos();
+
         }
     }
 }
