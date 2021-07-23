@@ -58,7 +58,8 @@
             this.label26 = new System.Windows.Forms.Label();
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnIngresoNota = new System.Windows.Forms.Button();
+            this.btnActualizarNota = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
@@ -333,8 +334,9 @@
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.Location = new System.Drawing.Point(9, 310);
             this.dgvAlumnos.Name = "dgvAlumnos";
-            this.dgvAlumnos.Size = new System.Drawing.Size(855, 212);
+            this.dgvAlumnos.Size = new System.Drawing.Size(383, 212);
             this.dgvAlumnos.TabIndex = 34;
+            this.dgvAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellClick);
             this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
@@ -345,19 +347,32 @@
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 35;
             // 
-            // textBox1
+            // btnIngresoNota
             // 
-            this.textBox1.Location = new System.Drawing.Point(738, 327);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 36;
+            this.btnIngresoNota.Location = new System.Drawing.Point(432, 479);
+            this.btnIngresoNota.Name = "btnIngresoNota";
+            this.btnIngresoNota.Size = new System.Drawing.Size(99, 43);
+            this.btnIngresoNota.TabIndex = 36;
+            this.btnIngresoNota.Text = "Ingresar notas";
+            this.btnIngresoNota.UseVisualStyleBackColor = true;
+            this.btnIngresoNota.Click += new System.EventHandler(this.btnIngresoNota_Click);
+            // 
+            // btnActualizarNota
+            // 
+            this.btnActualizarNota.Location = new System.Drawing.Point(432, 416);
+            this.btnActualizarNota.Name = "btnActualizarNota";
+            this.btnActualizarNota.Size = new System.Drawing.Size(99, 43);
+            this.btnActualizarNota.TabIndex = 37;
+            this.btnActualizarNota.Text = "Actualizar nota";
+            this.btnActualizarNota.UseVisualStyleBackColor = true;
             // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 534);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnActualizarNota);
+            this.Controls.Add(this.btnIngresoNota);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.lbl);
@@ -419,6 +434,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnIngresoNota;
+        private System.Windows.Forms.Button btnActualizarNota;
     }
 }

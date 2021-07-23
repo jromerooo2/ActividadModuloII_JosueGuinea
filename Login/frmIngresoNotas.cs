@@ -155,5 +155,24 @@ namespace Login
         {
 
         }
+       
+
+        private void btnIngresoNota_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvAlumnos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posicion = dgvAlumnos.CurrentRow.Index;
+            //Enviando datos hacia los text box
+            string nombre, apellido,nota;
+           
+            nombre = dgvAlumnos[0, posicion].Value.ToString();
+            apellido = dgvAlumnos[1, posicion].Value.ToString();
+            nota = dgvAlumnos[2, posicion].Value.ToString();
+
+            MessageBox.Show(nombre + apellido + nota);
+        }
     }
 }
