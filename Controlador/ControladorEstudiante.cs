@@ -69,9 +69,9 @@ namespace Controlador
             return ModelEstudiante.EliminarEstudiante(id);
         }
 
-        public static bool ActualizarEstudiante_Controller(int id)
+        public bool ActualizarEstudiante_Controller(int id)
         {
-            return ModelEstudiante.ActualizarEstudiante(id, nombres, apellidos, direccion, idGrado, idGeneros, idEspecialidad);
+            return ModelEstudiante.ActualizarEstudiante(id, nombres, apellidos, direccion, idGrado, idEspecialidad,idGeneros);
         }
     }
 }

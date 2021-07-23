@@ -54,7 +54,7 @@ namespace Modelo
             try
             {
                 //PROCESO DE INSERCIÓN
-                MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbalumnos SET nombreAlumno='" + pnombres + "', apellidoAlumno='" + papellidos + "', direccion = '" + pdireccion + "', idMateria ='" +pidMateria+ "', idEspecialidad = '"+pidEspecialidad+"', idSeccion = '"+pidSeccion+"' WHERE idAlumno ='" + id + "'"), ModeloConexion.ObtenerConexion());
+                MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbalumnos SET nombreAlumno='" + pnombres + "', apellidoAlumno='" + papellidos + "', direccion = '" + pdireccion + "', idGrado ='" +pidMateria+ "', idEspecialidad = '"+pidEspecialidad+"', idSeccion = '"+pidSeccion+"' WHERE idAlumno ='" + id + "'"), ModeloConexion.ObtenerConexion());
                 //VERIFICACIÓN DE INSERCIÓN
                 retorno = Convert.ToBoolean(cmdupdate.ExecuteNonQuery());
                 //RETORNO
