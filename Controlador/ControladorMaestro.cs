@@ -61,5 +61,11 @@ namespace Controlador
         {
             return ModelMaestro.UpdateMaestro(id, nombres, apellidos, idMateria);
         }
+
+        //RETORNO PARA CARGAR CMBPERIODO
+        public static DataTable CargarPeriodos()
+        {
+            return ModelMaestro.CargarCmbPeriodo();
+        }
     }
 }
