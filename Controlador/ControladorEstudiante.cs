@@ -71,7 +71,7 @@ namespace Controlador
 
         public static bool ActualizarEstudiante_Controller(int id)
         {
-            return ModelEstudiante.ActualizarEstudiante(id, );
+            return ModelEstudiante.ActualizarEstudiante(id, nombres, apellidos, direccion, idGrado, idGeneros, idEspecialidad);
         }
     }
 }
