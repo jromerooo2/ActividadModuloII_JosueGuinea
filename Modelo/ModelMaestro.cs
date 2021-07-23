@@ -127,5 +127,28 @@ namespace Modelo
                 }            
         }
 
+        //MÉTODO PARA CARGAR CMBPERIODO
+        public static DataTable CargarCmbPeriodo()
+        {
+            DataTable data;
+            try
+            {
+                string query = "SELECT * FROM tbperiodos";
+                MySqlCommand cmdselect = new MySqlCommand(string.Format(query), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdselect);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+            finally
+            {
+                ModeloConexion.ObtenerConexion().Close();
+            }
+        }
+
     }
 }
