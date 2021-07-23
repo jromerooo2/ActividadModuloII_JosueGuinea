@@ -121,7 +121,6 @@ namespace Login
             txtID.Text = dgvDocentes[0, posicion].Value.ToString();
 
             //CMB Values
-
             int idmateria = Convert.ToInt16(dgvDocentes[3, posicion].Value.ToString());
             cmbMateria.DataSource = ControladorMaestro.CargarMateriaInner(idmateria);
             cmbMateria.DisplayMember = "nombreMateria";
