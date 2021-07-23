@@ -27,6 +27,7 @@ namespace Login
 
         }
 
+        //CARGANDO EL CMBPERIODOS
         private void FrmIngresoPerfil_Load(object sender, EventArgs e)
         {
             if (ControladorMaestro.CargarPeriodos() != null)
