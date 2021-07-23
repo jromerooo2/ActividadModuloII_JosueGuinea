@@ -88,7 +88,7 @@ namespace Login
                 idGrado = Convert.ToInt16(cmbGrados.SelectedValue);
 
                 //INSTANCIAR OBJETO
-                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, idGrado, idEspecialidad, idGeneros);
+                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, direccion, idGrado, idEspecialidad, idGeneros);
                 bool respuesta = objestudiante.EnviarDatosController();
                 if (respuesta)
                 {
@@ -140,6 +140,14 @@ namespace Login
 
         }
 
+        private void dgvEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataToTextBox();
+        }
 
+        private void dataToTextBox()
+        {
+            
+        }
     }
 }
