@@ -55,8 +55,8 @@ namespace Login
             {
                 return true;
             }
-            
-         }
+
+        }
 
         void CargarMaterias()
         {
@@ -87,7 +87,7 @@ namespace Login
             try
             {
                 string nombres, apellidos;
-                int  idMateria;
+                int idMateria;
                 nombres = txtNombres.Text;
                 apellidos = txtApellidos.Text;
                 idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
@@ -108,10 +108,10 @@ namespace Login
             }
             catch (Exception er)
             {
-                MessageBox.Show("Oops!, ocurrió un error al registrar al docente, consulte con el administrador del sistema."+ er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Oops!, ocurrió un error al registrar al docente, consulte con el administrador del sistema." + er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
         void DataToTextBox()
         {
             int posicion = dgvDocentes.CurrentRow.Index;
@@ -141,8 +141,6 @@ namespace Login
 
         private void btnActualizarEmpl_Click(object sender, EventArgs e)
         {
-
-
             actualizarDocente();
         }
 
@@ -157,13 +155,14 @@ namespace Login
 
             int idMateria = Convert.ToInt16(cmbMateria.SelectedValue);
             int id = getId();
-            string s =  Convert.ToString(cmbMateria.SelectedValue);
-            arrayDatosActu.Add(s );
+
+            string s = Convert.ToString(cmbMateria.SelectedValue);
+            arrayDatosActu.Add(s);
 
 
-            if (!Empty())
+            if (!Empty() && Different(arrayDatosActu))
             {
-                //MessageBox.Show("yes they're diiff");
+                MessageBox.Show("yes they're diiff");
 
                 ControladorMaestro objemaestro = new ControladorMaestro(nombres, apellidos, idMateria);
                 bool res = ControladorMaestro.UpdateMaestro(id);
@@ -178,11 +177,33 @@ namespace Login
                 }
             }
             else
-            {                
+            {
                 MessageBox.Show("Para Actualizar por favor cambia los datos del docente");
             }
         }
 
+                private bool Different(List<string> arrayDatosNuevos)
+                {
+                    
+                    int posicion = dgvDocentes.CurrentRow.Index;
+
+                    string nombreOriginal = dgvDocentes[1, posicion].Value.ToString();
+                    string apellidoOriginal = dgvDocentes[2, posicion].Value.ToString();
+                    string materiaOriginal = dgvDocentes[3, posicion].Value.ToString();
+
+
+            if (nombreOriginal == arrayDatosNuevos[0] && apellidoOriginal == arrayDatosNuevos[1] && materiaOriginal == arrayDatosNuevos[2])
+                    {
+
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+
+
+                }        
 
         private void btnEliminarEmpl_Click(object sender, EventArgs e)
         {

@@ -19,9 +19,7 @@ namespace Login
 
         private void btnInicioSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            frmMenu formMenu = new frmMenu();
-            formMenu.Show();
+                   
         }
     }
 }
