@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModelEstudiante.cs" />
+    <Compile Include="ModelLogin.cs" />
     <Compile Include="ModelMaestro.cs" />
     <Compile Include="ModeloConexion.cs" />
     <Compile Include="ModelUsuario.cs" />

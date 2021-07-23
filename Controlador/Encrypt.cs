@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace Controlador
 {
-    class Encrypt
+    public class Encrypt
     {
         public static string GetMD5(string str)
         {
