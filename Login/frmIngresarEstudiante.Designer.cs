@@ -41,7 +41,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.dtpNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbGeneros = new System.Windows.Forms.ComboBox();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.cmbGrados = new System.Windows.Forms.ComboBox();
             this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(36, 240);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(36, 241);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.ReadOnly = true;
             this.dgvEstudiantes.Size = new System.Drawing.Size(896, 189);
@@ -146,7 +146,7 @@
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.dtpNacimiento);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.cmbGeneros);
+            this.groupBox1.Controls.Add(this.cmbEstado);
             this.groupBox1.Controls.Add(this.cmbGrados);
             this.groupBox1.Controls.Add(this.cmbEspecialidad);
             this.groupBox1.Controls.Add(this.label2);
@@ -199,14 +199,14 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "Fecha de Nacimiento";
             // 
-            // cmbGeneros
+            // cmbEstado
             // 
-            this.cmbGeneros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGeneros.FormattingEnabled = true;
-            this.cmbGeneros.Location = new System.Drawing.Point(419, 128);
-            this.cmbGeneros.Name = "cmbGeneros";
-            this.cmbGeneros.Size = new System.Drawing.Size(125, 21);
-            this.cmbGeneros.TabIndex = 8;
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Location = new System.Drawing.Point(419, 128);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(125, 21);
+            this.cmbEstado.TabIndex = 8;
             // 
             // cmbGrados
             // 
@@ -241,9 +241,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(416, 113);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Genero.";
+            this.label8.Text = "Estado.";
             // 
             // label7
             // 
@@ -311,7 +311,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvEstudiantes);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmIngresarEstudiante";
             this.Text = "frmIngresarEstudiante";
             this.Load += new System.EventHandler(this.frmIngresarEstudiante_Load);
@@ -338,7 +338,7 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.DateTimePicker dtpNacimiento;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbGeneros;
+        private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.ComboBox cmbGrados;
         private System.Windows.Forms.ComboBox cmbEspecialidad;
         private System.Windows.Forms.Label label2;

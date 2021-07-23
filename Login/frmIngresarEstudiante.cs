@@ -19,10 +19,22 @@ namespace Login
         {
             InitializeComponent();
             //Metodos para cargar los tres combobox para ingresar los estudiantes.
-            CargarEspecialidad();
-            CargarGrado();
-            CargarGenero();
+            CargarDatos();
             CargarGridDatos();
+        }
+
+        void CargarDatos()
+        {
+            try
+            {
+                CargarEstado();
+                CargarGrado();
+                CargarEspecialidad();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar datos." + ex.Message, "Error de carga", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         void CargarEspecialidad()
@@ -57,14 +69,14 @@ namespace Login
                                  MessageBoxIcon.Error);
             }
         }
-        void CargarGenero()
+        void CargarEstado()
         {
             try
             {
-                DataTable dataGenero = ControladorEstudiante.ObtenerGenero();
-                cmbGeneros.DataSource = dataGenero;
-                cmbGeneros.DisplayMember = "genero";
-                cmbGeneros.ValueMember = "idGenero";
+                DataTable dataGenero = ControladorEstudiante.ObtenerEstado();
+                cmbEstado.DataSource = dataGenero;
+                cmbEstado.DisplayMember = "estado";
+                cmbEstado.ValueMember = "idEstado";
             }
             catch (Exception)
             {
@@ -79,17 +91,49 @@ namespace Login
             try
             {
                 string nombres, apellidos, direccion;
-                int idEspecialidad, idGeneros, idGrado;
+                int idEspecialidad, idEstado, idGrado;
                 nombres = txtNombres.Text;
                 apellidos = txtApellidos.Text;
                 direccion = txtDireccion.Text;
                 idEspecialidad = Convert.ToInt16(cmbEspecialidad.SelectedValue);
-                idGeneros = Convert.ToInt16(cmbGeneros.SelectedValue);
+                idEstado = Convert.ToInt16(cmbEstado.SelectedValue);
                 idGrado = Convert.ToInt16(cmbGrados.SelectedValue);
 
                 //INSTANCIAR OBJETO
-                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, direccion, idGrado, idEspecialidad, idGeneros);
+                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, direccion, idEspecialidad, idGrado, idEstado);
                 bool respuesta = objestudiante.EnviarDatosController();
+                if (respuesta)
+                {
+                    MessageBox.Show("Usuario registrado exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no pudo ser registrado", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema." + er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        void ActualizarDatos()
+        {
+            try
+            {
+                string nombres, apellidos, direccion;
+                int idEspecialidad, idEstado, idGrado;
+                nombres = txtNombres.Text;
+                apellidos = txtApellidos.Text;
+                direccion = txtDireccion.Text;
+                idEspecialidad = Convert.ToInt16(cmbEspecialidad.SelectedValue);
+                idEstado = Convert.ToInt16(cmbEstado.SelectedValue);
+                idGrado = Convert.ToInt16(cmbGrados.SelectedValue);
+                //Valor por su clase
+                ControladorEstudiante.idEstudiante = Convert.ToInt16(txtID.Text);
+                //INSTANCIAR OBJETO
+                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, direccion, idGrado, idEspecialidad, idEstado);
+                bool respuesta = objestudiante.ActualizarEstudiante_Controller(Convert.ToInt16(txtID.Text));
                 if (respuesta)
                 {
                     MessageBox.Show("Usuario registrado exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -142,14 +186,8 @@ namespace Login
 
         private void dgvEstudiantes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataToTextBox();
+            DataToTextBox();
         }
-
-        private void dataToTextBox()
-        {
-            
-        }
-
 
         private int getId()
         {
@@ -174,9 +212,26 @@ namespace Login
             }
         }
 
+        void DataToTextBox()
+        {
+            int posicion = dgvEstudiantes.CurrentRow.Index;
+
+            txtNombres.Text = dgvEstudiantes[1, posicion].Value.ToString();
+            txtApellidos.Text = dgvEstudiantes[2, posicion].Value.ToString();
+            txtID.Text = dgvEstudiantes[0, posicion].Value.ToString();
+            txtDireccion.Text = dgvEstudiantes[5, posicion].Value.ToString();
+
+            ////CMB Values
+            //int idEspecialidad = Convert.ToInt16(dgvEstudiantes[3, posicion].Value.ToString());
+            //cmbEspecialidad.DataSource = ControladorEstudiante.CargarEspecialidadInner(idEspecialidad);
+            //cmbEspecialidad.DisplayMember = "especialidad";
+            //cmbEspecialidad.ValueMember = "idEspecialidad";
+        }
+
         private void btnActualizarEstudiante_Click(object sender, EventArgs e)
         {
-
+            ActualizarDatos();
+            CargarGridDatos();
         }
     }
 }

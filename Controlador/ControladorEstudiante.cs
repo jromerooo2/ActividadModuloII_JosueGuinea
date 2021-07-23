@@ -44,10 +44,17 @@ namespace Controlador
             return ModelEstudiante.CargarGrado();
         }
 
-        public static DataTable ObtenerGenero()
+        public static DataTable ObtenerEstado()
         {
-            return ModelEstudiante.CargarGenero();
+            return ModelEstudiante.CargarEstado();
         }
+
+        //inner join
+        public static DataTable CargarEspecialidadInner(int idEspecialidad)
+        {
+            return ModelEstudiante.CargarEspecialidad_Inner(idEspecialidad);
+        }
+
 
         //CRUD
         public bool EnviarDatosController()

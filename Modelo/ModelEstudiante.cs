@@ -29,6 +29,7 @@ namespace Modelo
                 return retorno;
             }
         }
+
         public static bool EliminarEstudiante(int pid)
         {
             bool retorno = false;
@@ -48,13 +49,14 @@ namespace Modelo
                 return retorno;
             }
         }
-        public static bool ActualizarEstudiante(int id, string pnombres, string papellidos, string pdireccion, int pidMateria, int pidEspecialidad, int pidSeccion)
+
+        public static bool ActualizarEstudiante(int id, string pnombres, string papellidos, string pdireccion, int pidSeccion, int pidEspecialidad, int pidEstado)
         {
             bool retorno = false;
             try
             {
                 //PROCESO DE INSERCIÓN
-                MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbalumnos SET nombreAlumno='" + pnombres + "', apellidoAlumno='" + papellidos + "', direccion = '" + pdireccion + "', idGrado ='" +pidMateria+ "', idEspecialidad = '"+pidEspecialidad+"', idSeccion = '"+pidSeccion+"' WHERE idAlumno ='" + id + "'"), ModeloConexion.ObtenerConexion());
+                MySqlCommand cmdupdate = new MySqlCommand(string.Format("UPDATE tbalumnos SET nombreAlumno ='" + pnombres + "', apellidoAlumno='" + papellidos + "', direccion = '" + pdireccion + "', idSeccion ='" +pidSeccion+ "', idEspecialidad = '"+pidEspecialidad+"', idEstado = '"+pidEstado+"' WHERE idAlumno ='" + id + "'"), ModeloConexion.ObtenerConexion());
                 //VERIFICACIÓN DE INSERCIÓN
                 retorno = Convert.ToBoolean(cmdupdate.ExecuteNonQuery());
                 //RETORNO
@@ -66,6 +68,27 @@ namespace Modelo
             }
         }
 
+
+        public static DataTable CargarEspecialidad_Inner(int idEspecialidad)
+        {
+            DataTable data;
+            try
+            {
+                string query = "SELECT * FROM tbespecialidad WHERE idEspecialidad = ?param1";
+                MySqlCommand cmdtipodoc = new MySqlCommand(string.Format(query), ModeloConexion.ObtenerConexion());
+                cmdtipodoc.Parameters.Add(new MySqlParameter("param1", idEspecialidad));
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdtipodoc);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
+
+        //Tabla alumnos completa
         public static DataTable ObtenerListaAlumnos()
         {
             DataTable data;
@@ -84,7 +107,7 @@ namespace Modelo
             }
         }
 
-
+        //Tabla alumno solo los nombres y apellidos
         public static DataTable ObtenerListaAlumnos2()
         {
             DataTable data;
@@ -139,12 +162,12 @@ namespace Modelo
                 return data = null;
             }
         }
-        public static DataTable CargarGenero()
+        public static DataTable CargarEstado()
         {
             DataTable data;
             try
             {
-                string instruccion = "SELECT * FROM tbgeneros";
+                string instruccion = "SELECT * FROM tbestados";
                 MySqlCommand cmdGenero = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmdGenero);
                 data = new DataTable();
