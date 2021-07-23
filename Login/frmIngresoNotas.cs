@@ -107,29 +107,29 @@ namespace Login
         }
         private void btnIngresoNota_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string nombreAlumnos, apellidoAlumno, Nota;
-                ControladorEstudiante objempleado;
+            //try
+            //{
+            //    string nombreAlumnos, apellidoAlumno, Nota;
+            //    ControladorEstudiante objempleado;
 
-                objempleado = new ControladorEstudiante();
-                nombreAlumno = dgvAlumnos[0, posicion].Text;
-                apellidoAlumno = dgvAlumnos[1, posicion].Text;
-                objempleado = new ControladorEstudiante(nombreAlumno, apellidoAlumno,  apellidoAlumno);
-                bool respuesta = objempleado.EnviarDatosController();
-                if (respuesta == true)
-                {
-                    MessageBox.Show("Notas  exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Notas no pudieron ser ingresadas", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //    objempleado = new ControladorEstudiante();
+            //    nombreAlumno = dgvAlumnos[0, posicion].Text;
+            //    apellidoAlumno = dgvAlumnos[1, posicion].Text;
+            //    objempleado = new ControladorEstudiante(nombreAlumno, apellidoAlumno,  apellidoAlumno);
+            //    bool respuesta = objempleado.EnviarDatosController();
+            //    if (respuesta == true)
+            //    {
+            //        MessageBox.Show("Notas  exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Notas no pudieron ser ingresadas", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
     }
 }
