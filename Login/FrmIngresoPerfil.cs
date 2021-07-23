@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
 
 namespace Login
 {
@@ -15,6 +16,31 @@ namespace Login
         public FrmIngresoPerfil()
         {
             InitializeComponent();
+        }
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //CARGANDO EL CMBPERIODOS
+        private void FrmIngresoPerfil_Load(object sender, EventArgs e)
+        {
+            if (ControladorMaestro.CargarPeriodos() != null)
+            {
+                CmbPeriodo.DataSource = ControladorMaestro.CargarPeriodos();
+                CmbPeriodo.ValueMember = "idPeriodo";
+                CmbPeriodo.DisplayMember = "periodo";
+            }
+        }
+
+        private void CmbPeriodo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

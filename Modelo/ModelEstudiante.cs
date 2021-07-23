@@ -48,6 +48,26 @@ namespace Modelo
             }
         }
 
+
+        public static DataTable ObtenerListaAlumnos2()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT nombreAlumno, apellidoAlumno, Nota FROM tbalumnos";
+                MySqlCommand cmdalumnos = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdalumnos);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
+
+
         //Cargar la especialidad de la base de datos
         public static DataTable CargarEspecialidad()
         {
