@@ -79,7 +79,7 @@ namespace Login
             try
             {
                 string nombres, apellidos, direccion;
-                int idEspecialidad, idGeneros, idGrado, idEstudiante;
+                int idEspecialidad, idGeneros, idGrado;
                 nombres = txtNombres.Text;
                 apellidos = txtApellidos.Text;
                 direccion = txtDireccion.Text;
@@ -111,7 +111,11 @@ namespace Login
             dgvEstudiantes.DataSource = datosEstudiantes;
         }
 
-
+        private void btnAgregarEstudiante_Click(object sender, EventArgs e)
+        {
+            EnvioDatos();
+            CargarGridDatos();
+        }
 
 
 
@@ -135,5 +139,7 @@ namespace Login
         {
 
         }
+
+
     }
 }
