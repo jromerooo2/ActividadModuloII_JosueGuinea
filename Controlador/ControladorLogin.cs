@@ -17,6 +17,8 @@ namespace Controlador
         }
         public static int GetUserRol()
         {
+            rolUsuario = ModelLogin.GetRol(usuario, passwordUsuario);
+
             return ModelLogin.GetRol(usuario, passwordUsuario);
         }
     }

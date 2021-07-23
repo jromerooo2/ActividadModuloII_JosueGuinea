@@ -50,7 +50,21 @@ namespace Login
 
             if (acceso && rol == 2)
             {
-                MessageBox.Show("Este usuario tiene rol 2 " +rol);
+                MessageBox.Show("Rol de usuario " +  AtributosLogin.rolUsuario);
+                frmMenu menu = new frmMenu();
+                menu.Show();
+                this.Hide();
+            }
+            else if (acceso && rol == 1)
+            {
+                MessageBox.Show("Rol de usuario " + AtributosLogin.rolUsuario);
+                frmMenu menu = new frmMenu();
+                menu.Show();
+                this.Hide();
+            }
+            else if (acceso && rol == 3)
+            {
+                MessageBox.Show("Este usuario tiene rol 2 " + rol);
                 frmMenu menu = new frmMenu();
                 menu.Show();
                 this.Hide();
