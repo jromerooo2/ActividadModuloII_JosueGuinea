@@ -17,7 +17,7 @@ namespace Login
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            //AVISO PARROQUIAL: PONER "form1.cs" SIEMPRE
+            //AVISO PARROQUIAL: PONER "Form1.cs" SIEMPRE
         }
     }
 }
