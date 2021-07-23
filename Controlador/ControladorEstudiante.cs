@@ -15,16 +15,18 @@ namespace Controlador
         public static int idEstudiante { get; set; }
         public string nombres { get; set; }
         public string apellidos { get; set; }
+        public string direccion { get; set; }
         public int idEspecialidad { get; set; }
         public int idGrado { get; set; }
         public int idGeneros { get; set; }
 
         //CONSTRUCTOR
-        public ControladorEstudiante(string pnombres, string papellidos, int pidGrado, int pidEspecialidad, int pidGeneros)
+        public ControladorEstudiante(string pnombres, string papellidos, string pdireccion,int pidGrado, int pidEspecialidad, int pidGeneros)
         {
             //Atributo = parametro
             nombres = pnombres;
             apellidos = papellidos;
+            direccion = pdireccion;
             idEspecialidad = pidEspecialidad;
             idGrado = pidGrado;
             idGeneros = pidGeneros;
@@ -50,7 +52,7 @@ namespace Controlador
         //CRUD
         public bool EnviarDatosController()
         {
-            return ModelEstudiante.RegistrarEstudiante(nombres, apellidos, idEspecialidad, idGrado, idGeneros);
+            return ModelEstudiante.RegistrarEstudiante(nombres, apellidos, direccion, idGrado, idGeneros, idEspecialidad);
         }
         public static DataTable CargarAlumnos_Controller()
         {
