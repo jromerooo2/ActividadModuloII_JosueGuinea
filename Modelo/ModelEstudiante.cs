@@ -11,6 +11,43 @@ namespace Modelo
 {
     public class ModelEstudiante
     {
+        //CRUD
+        public static bool RegistrarEstudiante(string pnommbres, string papellidos, int pidEspecialidad, int pidGrado, int pidGenero)
+        {
+            bool retorno = false;
+            try
+            {
+                //PROCESO DE INSERCIÓN.
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbmaestros(nombreAlumno, apellidoalumno, idSeccion, idEstado) VALUES('{0}','{1}','{2}','{3}','{4}')", pnommbres, papellidos, pidEspecialidad, pidGrado, pidGenero), ModeloConexion.ObtenerConexion());
+                //VERIFICACIÓN DE INSERCIÓN.
+                retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
+                //RETORNO
+                return retorno;
+            }
+            catch (Exception)
+            {
+                return retorno;
+            }
+        }
+
+        public static DataTable ObtenerListaAlumnos()
+        {
+            DataTable data;
+            try
+            {
+                string instruccion = "SELECT * FROM tbalumnos";
+                MySqlCommand cmdalumnos = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdalumnos);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
+            }
+            catch (Exception)
+            {
+                return data = null;
+            }
+        }
+
         //Cargar la especialidad de la base de datos
         public static DataTable CargarEspecialidad()
         {
@@ -56,6 +93,7 @@ namespace Modelo
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmdGenero);
                 data = new DataTable();
                 adp.Fill(data);
+
                 return data;
             }
             catch (Exception)
@@ -63,9 +101,6 @@ namespace Modelo
                 return data = null;
             }
         }
-        public static class ModelTeacher
-        {
-                        
-        }
+
     }
 }

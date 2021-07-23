@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Login
 {
-    public partial class notasAcademicas : Form
+    public partial class FrmIngresoPerfil : Form
     {
-        public notasAcademicas()
+        public FrmIngresoPerfil()
         {
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-             
-        }
-
-        private void notasAcademicas_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

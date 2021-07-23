@@ -13,6 +13,8 @@ namespace Login
 {
     public partial class frmIngresarEstudiante : Form
     {
+        DataTable datosEstudiantes;
+
         public frmIngresarEstudiante()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace Login
             CargarEspecialidad();
             CargarGrado();
             CargarGenero();
+            CargarGridDatos();
         }
 
         void CargarEspecialidad()
@@ -38,7 +41,6 @@ namespace Login
                                  MessageBoxIcon.Error);
             }
         }
-
         void CargarGrado()
         {
             try
@@ -72,6 +74,51 @@ namespace Login
             }
         }
 
+        void EnvioDatos()
+        {
+            try
+            {
+                string nombres, apellidos, direccion;
+                int idEspecialidad, idGeneros, idGrado;
+                nombres = txtNombres.Text;
+                apellidos = txtApellidos.Text;
+                direccion = txtDireccion.Text;
+                idEspecialidad = Convert.ToInt16(cmbEspecialidad.SelectedValue);
+                idGeneros = Convert.ToInt16(cmbGeneros.SelectedValue);
+                idGrado = Convert.ToInt16(cmbGrados.SelectedValue);
+
+                //INSTANCIAR OBJETO
+                ControladorEstudiante objestudiante = new ControladorEstudiante(nombres, apellidos, idGrado, idEspecialidad, idGeneros);
+                bool respuesta = objestudiante.EnviarDatosController();
+                if (respuesta)
+                {
+                    MessageBox.Show("Usuario registrado exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no pudo ser registrado", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema." + er, "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        void CargarGridDatos()
+        {
+            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller();
+            dgvEstudiantes.DataSource = datosEstudiantes;
+        }
+
+        private void btnAgregarEstudiante_Click(object sender, EventArgs e)
+        {
+            EnvioDatos();
+            CargarGridDatos();
+        }
+
+
+
         private void cmbEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -92,5 +139,7 @@ namespace Login
         {
 
         }
+
+
     }
 }

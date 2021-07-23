@@ -10,6 +10,27 @@ namespace Controlador
 {
     public class ControladorEstudiante
     {
+
+        //ATRIBUTOS
+        public static int idEstudiante { get; set; }
+        public string nombres { get; set; }
+        public string apellidos { get; set; }
+        public int idEspecialidad { get; set; }
+        public int idGrado { get; set; }
+        public int idGeneros { get; set; }
+
+        //CONSTRUCTOR
+        public ControladorEstudiante(string pnombres, string papellidos, int pidGrado, int pidEspecialidad, int pidGeneros)
+        {
+            //Atributo = parametro
+            nombres = pnombres;
+            apellidos = papellidos;
+            idEspecialidad = pidEspecialidad;
+            idGrado = pidGrado;
+            idGeneros = pidGeneros;
+
+        }
+
         //Controlador sobre el combobox de especialidad.
         public static DataTable ObtenerEspecialidad()
         {
@@ -24,6 +45,16 @@ namespace Controlador
         public static DataTable ObtenerGenero()
         {
             return ModelEstudiante.CargarGenero();
+        }
+
+        //CRUD
+        public bool EnviarDatosController()
+        {
+            return ModelEstudiante.RegistrarEstudiante(nombres, apellidos, idEspecialidad, idGrado, idGeneros);
+        }
+        public static DataTable CargarAlumnos_Controller()
+        {
+            return ModelEstudiante.ObtenerListaAlumnos();
         }
     }
 }

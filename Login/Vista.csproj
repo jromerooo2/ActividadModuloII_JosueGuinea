@@ -70,6 +70,12 @@
     <Compile Include="frmIngresoNotas.Designer.cs">
       <DependentUpon>frmIngresoNotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIngresoPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoPerfil.Designer.cs">
+      <DependentUpon>FrmIngresoPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     <EmbeddedResource Include="frmIngresoNotas.resx">
       <DependentUpon>frmIngresoNotas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoPerfil.resx">
+      <DependentUpon>FrmIngresoPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -147,6 +157,9 @@
       <Project>{f07eedd6-d7cd-4bbb-8fe8-96cdb184919e}</Project>
       <Name>Controlador</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
