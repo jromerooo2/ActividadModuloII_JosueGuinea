@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador;
 
 namespace Login
 {
@@ -15,6 +16,12 @@ namespace Login
         public frmMenu()
         {
             InitializeComponent();
+            if (AtributosLogin.rolUsuario != 1)
+            {
+                MessageBox.Show("Esta vista no es para ti");
+                this.Close();
+            }
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

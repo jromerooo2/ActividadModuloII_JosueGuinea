@@ -51,7 +51,7 @@ namespace Login
             if (acceso && rol == 2)
             {
                 MessageBox.Show("Rol de usuario " +  AtributosLogin.rolUsuario);
-                frmMenu menu = new frmMenu();
+                frmMenuDocentes menu = new frmMenuDocentes();
                 menu.Show();
                 this.Hide();
             }
