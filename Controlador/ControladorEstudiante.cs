@@ -59,11 +59,11 @@ namespace Controlador
             return ModelEstudiante.ObtenerListaAlumnos();
         }
 
-<<<<<<< Updated upstream
         public static DataTable CargarAlumnos_Controller2()
         {
             return ModelEstudiante.ObtenerListaAlumnos2();
-=======
+        }
+
         public static bool EliminarEstudiante(int id)
         {
             return ModelEstudiante.EliminarEstudiante(id);
@@ -72,7 +72,6 @@ namespace Controlador
         public static bool ActualizarEstudiante_Controller(int id)
         {
             return ModelEstudiante.ActualizarEstudiante(id, );
->>>>>>> Stashed changes
         }
     }
 }
