@@ -10,23 +10,25 @@ namespace Controlador
     public class ControladorIngresoNotas
     {
         //ATRIBUTOS
-        public string nombres { get; set; }
-        public string apellidos { get; set; }
-        public int nota { get; set; }
+        public int idAlumno { get; set; }
+        public int idMateria { get; set; }
+        public int idPeriodo { get; set; }
+        public int Nota { get; set; }
 
 
         //CONSTRUCTOR
-        public ControladorIngresoNotas(string pnombres, string papellidos, int pnota)
+        public ControladorIngresoNotas(int pIdalumno, int pIdmateria, int pIdperiodo, int pNota)
         {
             //Atributo = parametro
-            nombres = pnombres;
-            apellidos = papellidos;
-            nota = pnota;
+            idAlumno = pIdalumno;
+            idMateria = pIdmateria;
+            idPeriodo = pIdperiodo;
+            Nota = pNota;
 
         }
         public bool EnviarDatosController()
         {
-            return ModeloIngresoNotas.IngresarNota(nombres, apellidos, nota);
+            return ModeloIngresoNotas.IngresarNota(idAlumno, idMateria, idPeriodo, Nota);
         }
     }
 

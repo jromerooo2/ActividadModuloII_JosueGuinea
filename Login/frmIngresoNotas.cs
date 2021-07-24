@@ -147,14 +147,21 @@ namespace Login
         {                     
                 try
                 {
-                    int Nota;
+                    int Nota, IdAlumno, IdPeriodo, IdMateria ;
                     int posicion = dgvAlumnos.CurrentRow.Index;
-                    string nombreAlumnos, apellidoAlumno;
-                    nombreAlumnos = dgvAlumnos[0, posicion].Value.ToString();
-                    apellidoAlumno = dgvAlumnos[1, posicion].Value.ToString();
+
+                    IdAlumno = Convert.ToInt16(dgvAlumnos[0, posicion].Value.ToString());
+                        
                     Nota = Convert.ToInt16(dgvAlumnos[2, posicion].Value.ToString());
 
-                    ControladorIngresoNotas objestudiante = new ControladorIngresoNotas(nombreAlumnos, apellidoAlumno, Nota);
+                    IdPeriodo = Convert.ToInt16(cmbPeriodo.SelectedValue);
+
+                    IdMateria = Convert.ToInt16(cmbMateria.SelectedValue);
+
+                //MessageBox.Show("Value of Period : "+IdPeriodo);
+                //MessageBox.Show("Value of Materia : " + IdMateria);
+
+                ControladorIngresoNotas objestudiante = new ControladorIngresoNotas(IdAlumno, IdMateria, IdPeriodo, Nota);
 
                     bool respuesta = objestudiante.EnviarDatosController();
                     if (respuesta)
@@ -173,31 +180,7 @@ namespace Login
         }
         private void btnIngresoNota_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int Nota;
-                int posicion = dgvAlumnos.CurrentRow.Index;
-                string nombreAlumnos, apellidoAlumno;
-                nombreAlumnos = dgvAlumnos[0, posicion].Value.ToString();
-                apellidoAlumno = dgvAlumnos[1, posicion].Value.ToString();
-                Nota = Convert.ToInt16(dgvAlumnos[2, posicion].Value.ToString());
-
-                ControladorIngresoNotas objestudiante = new ControladorIngresoNotas(nombreAlumnos, apellidoAlumno, Nota);      
-                
-                bool respuesta = objestudiante.EnviarDatosController();
-                if (respuesta)
-                {
-                    MessageBox.Show("Notas  exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Notas no pudieron ser ingresadas", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            EnvioDatos();
         }
 
         private void frmIngresoNotas_Load(object sender, EventArgs e)
