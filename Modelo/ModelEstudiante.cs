@@ -113,7 +113,7 @@ namespace Modelo
             DataTable data;
             try
             {
-                string instruccion = "SELECT nombreAlumno, apellidoAlumno, Nota FROM tbalumnos";
+                string instruccion = "SELECT idAlumno, nombreAlumno FROM tbalumnos";
                 MySqlCommand cmdalumnos = new MySqlCommand(string.Format(instruccion), ModeloConexion.ObtenerConexion());
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmdalumnos);
                 data = new DataTable();

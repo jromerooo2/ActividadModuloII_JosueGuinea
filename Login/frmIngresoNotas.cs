@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Login
 {
     public partial class frmIngresoNotas : Form
@@ -17,6 +19,7 @@ namespace Login
         {
             InitializeComponent();
             CargarGridDatos();
+            cmbMateria.DataSource = ControladorMaestro.ObtenerMaterias();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,7 +59,7 @@ namespace Login
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label4_Click_1(object sender, EventArgs e)
@@ -73,8 +76,26 @@ namespace Login
 
         void CargarGridDatos()
         {
-            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller2();
+            
+            CargarMaterias();
             dgvAlumnos.DataSource = datosEstudiantes;
+        }
+
+        void CargarMaterias()
+        {
+            try
+            {
+                DataTable dataTipoDoc = ControladorMaestro.ObtenerMaterias();
+                cmbMateria.DataSource = dataTipoDoc;
+                cmbMateria.DisplayMember = "nombreMateria";
+                cmbMateria.ValueMember = "idMateria";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar las Materias .", "Error de carga",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
         }
 
 
@@ -119,7 +140,7 @@ namespace Login
                 ControladorIngresoNotas objestudiante = new ControladorIngresoNotas(nombreAlumnos, apellidoAlumno, Nota);      
                 
                 bool respuesta = objestudiante.EnviarDatosController();
-                if (respuesta == true)
+                if (respuesta)
                 {
                     MessageBox.Show("Notas  exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -132,6 +153,11 @@ namespace Login
             {
                 MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void frmIngresoNotas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

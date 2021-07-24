@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Modelo
 {
-    public  class ModeloIngresoNotas
+    public class ModeloIngresoNotas
     {
         public static bool IngresarNota(string nombre, string apellido, int nota)
         {
@@ -15,7 +15,7 @@ namespace Modelo
             try
             {
                 //PROCESO DE INSERCIÓN.
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbnota(nombreAlumno, apellidoAlumno,Nota) VALUES('{0}','{1}','{2}')", pnommbres, papellidos, pnota), ModeloConexion.ObtenerConexion());
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("INSERT INTO tbnota(nombreAlumno, apellidoAlumno,Nota) VALUES('{0}','{1}','{2}')", nombre, apellido, nota), ModeloConexion.ObtenerConexion());
                 //VERIFICACIÓN DE INSERCIÓN.
                 retorno = Convert.ToBoolean(cmdinsert.ExecuteNonQuery());
                 //RETORNO
@@ -28,3 +28,4 @@ namespace Modelo
         }
     }
 }
+
