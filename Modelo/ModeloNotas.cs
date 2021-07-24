@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace Modelo
 {
-    public class ModeloIngresoNotas
+    public class ModeloNotas
     {
         public static bool IngresarNota(int idAlumno, int idMateria, int idPeriodo, int Nota)
         {
@@ -24,6 +25,26 @@ namespace Modelo
             catch (Exception)
             {
                 return retorno;
+            }
+        }
+
+        public static DataTable getGradesByID(int IdAlumno)
+        {
+            DataTable retorno ;
+            try
+            {
+                //PROCESO DE INSERCIÓN.
+                MySqlCommand cmdinsert = new MySqlCommand(string.Format("SELECT idMateria, idPeriodo, nota FROM tbnotas WHERE  idALumno = " + IdAlumno), ModeloConexion.ObtenerConexion());
+                //VERIFICACIÓN DE INSERCIÓN.
+                cmdinsert.ExecuteNonQuery();
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdinsert);
+                retorno = new DataTable();
+                adp.Fill(retorno);
+                return retorno;
+            }
+            catch (Exception)
+            {
+                return retorno = null;
             }
         }
     }

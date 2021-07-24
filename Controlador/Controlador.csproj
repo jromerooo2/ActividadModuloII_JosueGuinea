@@ -46,7 +46,7 @@
     <Compile Include="ControladorEstudiante.cs" />
     <Compile Include="ControladorLogin.cs" />
     <Compile Include="ControladorMaestro.cs" />
-    <Compile Include="ControladroIngresoNotas.cs" />
+    <Compile Include="ControladorNotas.cs" />
     <Compile Include="Encrypt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ControladorUsuario.cs" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Modelo;
+using System.Data;
 
 namespace Controlador
 {
@@ -26,9 +27,16 @@ namespace Controlador
             Nota = pNota;
 
         }
+
+        
         public bool EnviarDatosController()
         {
-            return ModeloIngresoNotas.IngresarNota(idAlumno, idMateria, idPeriodo, Nota);
+            return ModeloNotas.IngresarNota(idAlumno, idMateria, idPeriodo, Nota);
+        }
+
+        public DataTable TraerNotasPorAlumno()
+        {
+            return ModeloNotas.getGradesByID(idAlumno);
         }
     }
 

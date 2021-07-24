@@ -47,7 +47,7 @@
     <Compile Include="ModelLogin.cs" />
     <Compile Include="ModelMaestro.cs" />
     <Compile Include="ModeloConexion.cs" />
-    <Compile Include="ModeloIngresoNotas.cs" />
+    <Compile Include="ModeloNotas.cs" />
     <Compile Include="ModelUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

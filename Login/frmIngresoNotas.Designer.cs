@@ -60,11 +60,9 @@
             this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.cmbPeriodo = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.dgvNotas = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -340,10 +338,10 @@
             // dgvAlumnos
             // 
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlumnos.Location = new System.Drawing.Point(12, 382);
+            this.dgvAlumnos.Location = new System.Drawing.Point(21, 373);
             this.dgvAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvAlumnos.Name = "dgvAlumnos";
-            this.dgvAlumnos.Size = new System.Drawing.Size(385, 261);
+            this.dgvAlumnos.Size = new System.Drawing.Size(466, 261);
             this.dgvAlumnos.TabIndex = 34;
             this.dgvAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellClick);
             this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -359,7 +357,7 @@
             // 
             // btnIngresoNota
             // 
-            this.btnIngresoNota.Location = new System.Drawing.Point(423, 479);
+            this.btnIngresoNota.Location = new System.Drawing.Point(562, 551);
             this.btnIngresoNota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIngresoNota.Name = "btnIngresoNota";
             this.btnIngresoNota.Size = new System.Drawing.Size(132, 53);
@@ -395,22 +393,12 @@
             this.label12.Size = new System.Drawing.Size(0, 17);
             this.label12.TabIndex = 41;
             // 
-            // dgvNotas
-            // 
-            this.dgvNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNotas.Location = new System.Drawing.Point(661, 382);
-            this.dgvNotas.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvNotas.Name = "dgvNotas";
-            this.dgvNotas.Size = new System.Drawing.Size(435, 261);
-            this.dgvNotas.TabIndex = 40;
-            // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 657);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dgvNotas);
             this.Controls.Add(this.cmbPeriodo);
             this.Controls.Add(this.cmbMateria);
             this.Controls.Add(this.btnIngresoNota);
@@ -440,7 +428,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,6 +465,5 @@
         private System.Windows.Forms.ComboBox cmbMateria;
         private System.Windows.Forms.ComboBox cmbPeriodo;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dgvNotas;
     }
 }
