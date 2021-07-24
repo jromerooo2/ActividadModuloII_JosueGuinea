@@ -46,8 +46,8 @@ namespace Login
         private void button10_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmNotasAcademicas frmAcademicas = new frmNotasAcademicas();
-            frmAcademicas.Show();
+            //frmNotasAcademicas frmAcademicas = new frmNotasAcademicas();
+            //frmAcademicas.Show();
         }
 
         private void frmMenu_Load(object sender, EventArgs e)
