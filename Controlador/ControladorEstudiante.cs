@@ -32,7 +32,6 @@ namespace Controlador
             idGeneros = pidGeneros;
 
         }
-
         //Controlador sobre el combobox de especialidad.
         public static DataTable ObtenerEspecialidad()
         {

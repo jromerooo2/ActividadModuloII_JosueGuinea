@@ -334,7 +334,7 @@
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.Location = new System.Drawing.Point(9, 310);
             this.dgvAlumnos.Name = "dgvAlumnos";
-            this.dgvAlumnos.Size = new System.Drawing.Size(397, 212);
+            this.dgvAlumnos.Size = new System.Drawing.Size(311, 212);
             this.dgvAlumnos.TabIndex = 34;
             this.dgvAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellClick);
             this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -349,7 +349,7 @@
             // 
             // btnIngresoNota
             // 
-            this.btnIngresoNota.Location = new System.Drawing.Point(432, 479);
+            this.btnIngresoNota.Location = new System.Drawing.Point(410, 479);
             this.btnIngresoNota.Name = "btnIngresoNota";
             this.btnIngresoNota.Size = new System.Drawing.Size(99, 43);
             this.btnIngresoNota.TabIndex = 36;
@@ -359,7 +359,7 @@
             // 
             // btnActualizarNota
             // 
-            this.btnActualizarNota.Location = new System.Drawing.Point(432, 416);
+            this.btnActualizarNota.Location = new System.Drawing.Point(410, 411);
             this.btnActualizarNota.Name = "btnActualizarNota";
             this.btnActualizarNota.Size = new System.Drawing.Size(99, 43);
             this.btnActualizarNota.TabIndex = 37;
