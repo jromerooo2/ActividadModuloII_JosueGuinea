@@ -11,7 +11,7 @@ namespace Controlador
     public class ControladorIngresoNotas
     {
         //ATRIBUTOS
-        public int idAlumno { get; set; }
+        public static int idAlumno { get; set; }
         public int idMateria { get; set; }
         public int idPeriodo { get; set; }
         public int Nota { get; set; }
@@ -34,9 +34,9 @@ namespace Controlador
             return ModeloNotas.IngresarNota(idAlumno, idMateria, idPeriodo, Nota);
         }
 
-        public DataTable TraerNotasPorAlumno()
+        public static DataTable TraerNotasPorAlumno(int id)
         {
-            return ModeloNotas.getGradesByID(idAlumno);
+            return ModeloNotas.getGradesByID(id);
         }
     }
 

@@ -19,22 +19,23 @@ namespace Login
         {
             InitializeComponent();
             CargarAlumno(id, nombreAlumno);
+            CargarGridNotas(id);
         }
 
         private void frmMostarNota_Load(object sender, EventArgs e)
         {
-            CargarGridNotas();
+            
         }
 
-        private void CargarGridNotas()
+        private void CargarGridNotas(int id)
         {
-            datosEstudiante = ;
+            datosEstudiante = ControladorIngresoNotas.TraerNotasPorAlumno(id);
             dgvNotas.DataSource = datosEstudiante;
         }
 
         private void CargarAlumno(int id, string nombreAl)
         {
-            MessageBox.Show("Id = "+ id);
+            //MessageBox.Show("Id = "+ id);
             lblNombre.Text = nombreAl;
         }
     }

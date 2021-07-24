@@ -28,24 +28,24 @@ namespace Modelo
             }
         }
 
-        public static DataTable getGradesByID(int IdAlumno)
+        public static DataTable getGradesByID(int idAlumno)
         {
-            DataTable retorno ;
+            DataTable data;
             try
             {
-                //PROCESO DE INSERCIÓN.
-                MySqlCommand cmdinsert = new MySqlCommand(string.Format("SELECT idMateria, idPeriodo, nota FROM tbnotas WHERE  idALumno = " + IdAlumno), ModeloConexion.ObtenerConexion());
-                //VERIFICACIÓN DE INSERCIÓN.
-                cmdinsert.ExecuteNonQuery();
-                MySqlDataAdapter adp = new MySqlDataAdapter(cmdinsert);
-                retorno = new DataTable();
-                adp.Fill(retorno);
-                return retorno;
+                string query = "SELECT idMateria,idPeriodo,nota FROM tbnotas WHERE idAlumno="+idAlumno;
+                MySqlCommand cmdtipodoc = new MySqlCommand(string.Format(query), ModeloConexion.ObtenerConexion());
+                cmdtipodoc.Parameters.Add(new MySqlParameter("param1", idAlumno));
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmdtipodoc);
+                data = new DataTable();
+                adp.Fill(data);
+                return data;
             }
             catch (Exception)
             {
-                return retorno = null;
+                return data = null;
             }
+
         }
     }
 }
