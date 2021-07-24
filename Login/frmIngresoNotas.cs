@@ -19,7 +19,7 @@ namespace Login
         {
             InitializeComponent();
             CargarGridDatos();
-            cmbMateria.DataSource = ControladorMaestro.ObtenerMaterias();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,8 +76,14 @@ namespace Login
 
         void CargarGridDatos()
         {
-            
+            CargarPeriodo();
             CargarMaterias();
+            cargarAlumnos();
+        }
+
+        void cargarAlumnos()
+        {
+            datosEstudiantes = ControladorEstudiante.CargarAlumnos_Controller2();
             dgvAlumnos.DataSource = datosEstudiantes;
         }
 
@@ -89,6 +95,22 @@ namespace Login
                 cmbMateria.DataSource = dataTipoDoc;
                 cmbMateria.DisplayMember = "nombreMateria";
                 cmbMateria.ValueMember = "idMateria";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar las Materias .", "Error de carga",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+        }
+        void CargarPeriodo()
+        {
+            try
+            {
+                DataTable dataTipoDoc = ControladorMaestro.ObtenerPeriodo();
+                cmbPeriodo.DataSource = dataTipoDoc;
+                cmbPeriodo.DisplayMember = "periodo";
+                cmbPeriodo.ValueMember = "idPeriodo";
             }
             catch (Exception)
             {
@@ -113,7 +135,6 @@ namespace Login
             apellido = dgvAlumnos[1, posicion].Value.ToString();
             nota = dgvAlumnos[2, posicion].Value.ToString();
 
-            MessageBox.Show(nombre + apellido + nota);
         }
 
 

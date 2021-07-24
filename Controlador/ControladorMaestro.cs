@@ -15,6 +15,11 @@ namespace Controlador
             return ModelMaestro.CargarMaterias();
         }
 
+        public static DataTable ObtenerPeriodo()
+        {
+            return ModelMaestro.CargarCmbPeriodo();
+        }
+
         //ATRIBUTOS
         public static string nombres { get; set; }
         public static string apellidos { get; set; }
