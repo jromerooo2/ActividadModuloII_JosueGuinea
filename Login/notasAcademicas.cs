@@ -16,15 +16,5 @@ namespace Login
         {
             InitializeComponent();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-             
-        }
-
-        private void notasAcademicas_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

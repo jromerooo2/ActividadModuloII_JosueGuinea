@@ -112,6 +112,12 @@
     <Compile Include="frmRegistrarMaestros.Designer.cs">
       <DependentUpon>frmRegistrarMaestros.cs</DependentUpon>
     </Compile>
+    <Compile Include="notasAcademicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notasAcademicas.Designer.cs">
+      <DependentUpon>notasAcademicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrarMaestros.resx">
       <DependentUpon>frmRegistrarMaestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notasAcademicas.resx">
+      <DependentUpon>notasAcademicas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -7402,50 +7418,6 @@
         0HSfge19y2Z2t9sW0D+VrO8Yn273P6ZDExrXy/l7MRadl//y19B7DOT/ZEj/uGkxL6vo/aal9HbjMnr7
         kD3oAHQodv+yOPtUEt4uYog3nnaFdA1xf4/3I8Qd+mDVSvqQ4fyjekA6A3p9PX3SEAfQ/RrmbhVbtk6H
         VxbQe5p52cqA3raa/v3wo/T/AS7FLcw+A/gKAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
-  </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        gdcCeXn9B2NFewrdhPPjAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
