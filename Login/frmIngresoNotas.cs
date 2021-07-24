@@ -144,8 +144,32 @@ namespace Login
         }
 
         void EnvioDatos()
-        {
-     
+        {                     
+                try
+                {
+                    int Nota;
+                    int posicion = dgvAlumnos.CurrentRow.Index;
+                    string nombreAlumnos, apellidoAlumno;
+                    nombreAlumnos = dgvAlumnos[0, posicion].Value.ToString();
+                    apellidoAlumno = dgvAlumnos[1, posicion].Value.ToString();
+                    Nota = Convert.ToInt16(dgvAlumnos[2, posicion].Value.ToString());
+
+                    ControladorIngresoNotas objestudiante = new ControladorIngresoNotas(nombreAlumnos, apellidoAlumno, Nota);
+
+                    bool respuesta = objestudiante.EnviarDatosController();
+                    if (respuesta)
+                    {
+                        MessageBox.Show("Notas  exitosamente", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Notas no pudieron ser ingresadas", "Confirmación de ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Oops!, ocurrió un error al registrar al empleado, consulte con el administrador del sistema.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }            
         }
         private void btnIngresoNota_Click(object sender, EventArgs e)
         {
