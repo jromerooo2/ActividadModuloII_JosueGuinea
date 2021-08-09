@@ -61,10 +61,10 @@
             // dgvEstudiantes
             // 
             this.dgvEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(36, 241);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(36, 250);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.ReadOnly = true;
-            this.dgvEstudiantes.Size = new System.Drawing.Size(896, 189);
+            this.dgvEstudiantes.Size = new System.Drawing.Size(896, 201);
             this.dgvEstudiantes.TabIndex = 16;
             this.dgvEstudiantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstudiantes_CellClick);
             // 
@@ -76,69 +76,112 @@
             this.groupBox2.Controls.Add(this.btnActualizarGrid);
             this.groupBox2.Controls.Add(this.btnAgregarEstudiante);
             this.groupBox2.Controls.Add(this.BtnConectar);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(622, 55);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(310, 161);
+            this.groupBox2.Size = new System.Drawing.Size(310, 180);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Información del empleado";
+            this.groupBox2.Text = "Acciones";
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(27, 113);
+            this.btnLimpiarCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnLimpiarCampos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnLimpiarCampos.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnLimpiarCampos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnLimpiarCampos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCampos.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(27, 128);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(111, 38);
             this.btnLimpiarCampos.TabIndex = 12;
             this.btnLimpiarCampos.Text = "Limpiar campos";
-            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
             // 
             // btnEliminarEstudiante
             // 
+            this.btnEliminarEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnEliminarEstudiante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnEliminarEstudiante.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnEliminarEstudiante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnEliminarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarEstudiante.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarEstudiante.ForeColor = System.Drawing.Color.White;
             this.btnEliminarEstudiante.Location = new System.Drawing.Point(159, 69);
             this.btnEliminarEstudiante.Name = "btnEliminarEstudiante";
-            this.btnEliminarEstudiante.Size = new System.Drawing.Size(111, 38);
+            this.btnEliminarEstudiante.Size = new System.Drawing.Size(111, 48);
             this.btnEliminarEstudiante.TabIndex = 14;
             this.btnEliminarEstudiante.Text = "Eliminar estudiante.";
-            this.btnEliminarEstudiante.UseVisualStyleBackColor = true;
+            this.btnEliminarEstudiante.UseVisualStyleBackColor = false;
             this.btnEliminarEstudiante.Click += new System.EventHandler(this.btnEliminarEstudiante_Click);
             // 
             // btnActualizarEstudiante
             // 
-            this.btnActualizarEstudiante.Location = new System.Drawing.Point(27, 69);
+            this.btnActualizarEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarEstudiante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarEstudiante.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnActualizarEstudiante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnActualizarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarEstudiante.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarEstudiante.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarEstudiante.Location = new System.Drawing.Point(27, 70);
             this.btnActualizarEstudiante.Name = "btnActualizarEstudiante";
-            this.btnActualizarEstudiante.Size = new System.Drawing.Size(111, 38);
+            this.btnActualizarEstudiante.Size = new System.Drawing.Size(111, 47);
             this.btnActualizarEstudiante.TabIndex = 11;
             this.btnActualizarEstudiante.Text = "Actualizar estudiante.";
-            this.btnActualizarEstudiante.UseVisualStyleBackColor = true;
+            this.btnActualizarEstudiante.UseVisualStyleBackColor = false;
             this.btnActualizarEstudiante.Click += new System.EventHandler(this.btnActualizarEstudiante_Click);
             // 
             // btnActualizarGrid
             // 
-            this.btnActualizarGrid.Location = new System.Drawing.Point(159, 25);
+            this.btnActualizarGrid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarGrid.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarGrid.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnActualizarGrid.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnActualizarGrid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarGrid.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarGrid.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarGrid.Location = new System.Drawing.Point(159, 21);
             this.btnActualizarGrid.Name = "btnActualizarGrid";
-            this.btnActualizarGrid.Size = new System.Drawing.Size(111, 38);
+            this.btnActualizarGrid.Size = new System.Drawing.Size(111, 42);
             this.btnActualizarGrid.TabIndex = 13;
             this.btnActualizarGrid.Text = "Actualizar grid de datos";
-            this.btnActualizarGrid.UseVisualStyleBackColor = true;
+            this.btnActualizarGrid.UseVisualStyleBackColor = false;
             // 
             // btnAgregarEstudiante
             // 
-            this.btnAgregarEstudiante.Location = new System.Drawing.Point(27, 25);
+            this.btnAgregarEstudiante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAgregarEstudiante.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAgregarEstudiante.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnAgregarEstudiante.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnAgregarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEstudiante.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEstudiante.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarEstudiante.Location = new System.Drawing.Point(27, 21);
             this.btnAgregarEstudiante.Name = "btnAgregarEstudiante";
-            this.btnAgregarEstudiante.Size = new System.Drawing.Size(111, 38);
+            this.btnAgregarEstudiante.Size = new System.Drawing.Size(111, 42);
             this.btnAgregarEstudiante.TabIndex = 10;
             this.btnAgregarEstudiante.Text = "Agregar estudiante.";
-            this.btnAgregarEstudiante.UseVisualStyleBackColor = true;
+            this.btnAgregarEstudiante.UseVisualStyleBackColor = false;
             this.btnAgregarEstudiante.Click += new System.EventHandler(this.btnAgregarEstudiante_Click);
             // 
             // BtnConectar
             // 
-            this.BtnConectar.Location = new System.Drawing.Point(159, 113);
+            this.BtnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.BtnConectar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.BtnConectar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.BtnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.BtnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConectar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConectar.ForeColor = System.Drawing.Color.White;
+            this.BtnConectar.Location = new System.Drawing.Point(159, 128);
             this.BtnConectar.Name = "BtnConectar";
             this.BtnConectar.Size = new System.Drawing.Size(111, 38);
             this.BtnConectar.TabIndex = 15;
             this.BtnConectar.Text = "Conectar";
-            this.BtnConectar.UseVisualStyleBackColor = true;
+            this.BtnConectar.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -158,19 +201,20 @@
             this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(36, 55);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(563, 161);
+            this.groupBox1.Size = new System.Drawing.Size(563, 180);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Información del empleado";
+            this.groupBox1.Text = "Información del estudiante";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(226, 73);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 13);
+            this.label10.Size = new System.Drawing.Size(122, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = "ID estudiante/ Carnet:";
             // 
@@ -178,7 +222,7 @@
             // 
             this.txtID.Location = new System.Drawing.Point(220, 89);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(185, 20);
+            this.txtID.Size = new System.Drawing.Size(185, 22);
             this.txtID.TabIndex = 10;
             // 
             // dtpNacimiento
@@ -187,7 +231,7 @@
             this.dtpNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNacimiento.Location = new System.Drawing.Point(220, 133);
             this.dtpNacimiento.Name = "dtpNacimiento";
-            this.dtpNacimiento.Size = new System.Drawing.Size(185, 20);
+            this.dtpNacimiento.Size = new System.Drawing.Size(185, 22);
             this.dtpNacimiento.TabIndex = 9;
             // 
             // label9
@@ -195,7 +239,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(229, 117);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 13);
+            this.label9.Size = new System.Drawing.Size(119, 16);
             this.label9.TabIndex = 3;
             this.label9.Text = "Fecha de Nacimiento";
             // 
@@ -205,7 +249,7 @@
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Location = new System.Drawing.Point(419, 128);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(125, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(125, 24);
             this.cmbEstado.TabIndex = 8;
             // 
             // cmbGrados
@@ -214,16 +258,17 @@
             this.cmbGrados.FormattingEnabled = true;
             this.cmbGrados.Location = new System.Drawing.Point(419, 86);
             this.cmbGrados.Name = "cmbGrados";
-            this.cmbGrados.Size = new System.Drawing.Size(125, 21);
+            this.cmbGrados.Size = new System.Drawing.Size(125, 24);
             this.cmbGrados.TabIndex = 7;
             // 
             // cmbEspecialidad
             // 
+            this.cmbEspecialidad.BackColor = System.Drawing.SystemColors.Window;
             this.cmbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspecialidad.FormattingEnabled = true;
             this.cmbEspecialidad.Location = new System.Drawing.Point(419, 46);
             this.cmbEspecialidad.Name = "cmbEspecialidad";
-            this.cmbEspecialidad.Size = new System.Drawing.Size(125, 21);
+            this.cmbEspecialidad.Size = new System.Drawing.Size(125, 24);
             this.cmbEspecialidad.TabIndex = 6;
             this.cmbEspecialidad.SelectedIndexChanged += new System.EventHandler(this.cmbEspecialidad_SelectedIndexChanged);
             // 
@@ -232,7 +277,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(26, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Dirección";
             // 
@@ -241,7 +286,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(416, 113);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.Size = new System.Drawing.Size(46, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "Estado.";
             // 
@@ -250,7 +295,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(416, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.Size = new System.Drawing.Size(43, 16);
             this.label7.TabIndex = 1;
             this.label7.Text = "Grado.";
             // 
@@ -259,7 +304,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(413, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.Size = new System.Drawing.Size(76, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Especialidad.";
             // 
@@ -268,7 +313,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(217, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 13);
+            this.label3.Size = new System.Drawing.Size(124, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Apellidos del apellido.";
             // 
@@ -277,7 +322,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombres del estudiante.";
             // 
@@ -293,20 +338,21 @@
             // 
             this.txtApellidos.Location = new System.Drawing.Point(220, 47);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(185, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(185, 22);
             this.txtApellidos.TabIndex = 2;
             // 
             // txtNombres
             // 
             this.txtNombres.Location = new System.Drawing.Point(29, 47);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(185, 20);
+            this.txtNombres.Size = new System.Drawing.Size(185, 22);
             this.txtNombres.TabIndex = 1;
             // 
             // frmIngresarEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(137)))));
             this.ClientSize = new System.Drawing.Size(970, 463);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvEstudiantes);
