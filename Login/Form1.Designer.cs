@@ -150,9 +150,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(441, -5);
+            this.pictureBox3.Location = new System.Drawing.Point(409, -69);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(347, 449);
+            this.pictureBox3.Size = new System.Drawing.Size(406, 530);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
@@ -163,7 +163,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(137)))));
             this.ClientSize = new System.Drawing.Size(781, 439);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnInicioSesion);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -173,6 +172,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
