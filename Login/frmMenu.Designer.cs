@@ -120,6 +120,7 @@
             // button5
             // 
             button5.BackColor = System.Drawing.SystemColors.Info;
+            button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             button5.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold);
             button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -138,6 +139,7 @@
             // button10
             // 
             button10.BackColor = System.Drawing.SystemColors.Info;
+            button10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             button10.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold);
             button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
