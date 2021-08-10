@@ -72,7 +72,7 @@
             button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             button1.Location = new System.Drawing.Point(500, -81);
-            button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            button1.Margin = new System.Windows.Forms.Padding(2);
             button1.Name = "button1";
             button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             button1.Size = new System.Drawing.Size(194, 34);
@@ -90,7 +90,7 @@
             button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             button2.Location = new System.Drawing.Point(580, 410);
-            button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            button2.Margin = new System.Windows.Forms.Padding(2);
             button2.Name = "button2";
             button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             button2.Size = new System.Drawing.Size(218, 34);
@@ -108,7 +108,7 @@
             button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             button3.Location = new System.Drawing.Point(580, 80);
-            button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            button3.Margin = new System.Windows.Forms.Padding(2);
             button3.Name = "button3";
             button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             button3.Size = new System.Drawing.Size(218, 34);
@@ -126,7 +126,7 @@
             button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button5.Location = new System.Drawing.Point(9, 303);
-            button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            button5.Margin = new System.Windows.Forms.Padding(2);
             button5.Name = "button5";
             button5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             button5.Size = new System.Drawing.Size(196, 80);
@@ -145,7 +145,7 @@
             button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button10.Location = new System.Drawing.Point(9, 218);
-            button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            button10.Margin = new System.Windows.Forms.Padding(2);
             button10.Name = "button10";
             button10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             button10.Size = new System.Drawing.Size(196, 80);
@@ -212,7 +212,7 @@
             this.panel3.Controls.Add(this.button9);
             this.panel3.Controls.Add(this.button8);
             this.panel3.Location = new System.Drawing.Point(243, 448);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(554, 236);
             this.panel3.TabIndex = 30;
@@ -259,7 +259,7 @@
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Location = new System.Drawing.Point(243, 119);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(554, 236);
             this.panel2.TabIndex = 28;
@@ -312,7 +312,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(9, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 580);
             this.panel1.TabIndex = 26;
@@ -348,7 +348,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(16, 538);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(147, 29);
             this.button4.TabIndex = 10;
@@ -359,7 +359,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(34, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -395,7 +395,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMenu";
             this.Text = "Menú";
             this.Load += new System.EventHandler(this.frmMenu_Load);
