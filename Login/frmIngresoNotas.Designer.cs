@@ -64,6 +64,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
@@ -144,7 +145,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(135)))));
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
@@ -245,7 +246,7 @@
             // 
             this.lblFchInicio.AutoSize = true;
             this.lblFchInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFchInicio.Location = new System.Drawing.Point(18, 50);
+            this.lblFchInicio.Location = new System.Drawing.Point(26, 50);
             this.lblFchInicio.Name = "lblFchInicio";
             this.lblFchInicio.Size = new System.Drawing.Size(72, 16);
             this.lblFchInicio.TabIndex = 30;
@@ -255,7 +256,7 @@
             // 
             this.lblFchFin.AutoSize = true;
             this.lblFchFin.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFchFin.Location = new System.Drawing.Point(22, 50);
+            this.lblFchFin.Location = new System.Drawing.Point(29, 50);
             this.lblFchFin.Name = "lblFchFin";
             this.lblFchFin.Size = new System.Drawing.Size(66, 16);
             this.lblFchFin.TabIndex = 31;
@@ -274,15 +275,15 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.YellowGreen;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(135)))));
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(4, 252);
+            this.panel2.Location = new System.Drawing.Point(-4, 252);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(871, 44);
+            this.panel2.Size = new System.Drawing.Size(890, 44);
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -290,7 +291,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(710, 13);
+            this.label22.Location = new System.Drawing.Point(572, 13);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(40, 18);
             this.label22.TabIndex = 6;
@@ -300,7 +301,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(8, 13);
+            this.label21.Location = new System.Drawing.Point(259, 13);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(32, 18);
             this.label21.TabIndex = 5;
@@ -310,7 +311,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(74, 13);
+            this.label26.Location = new System.Drawing.Point(349, 13);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(62, 18);
             this.label26.TabIndex = 0;
@@ -320,7 +321,7 @@
             // 
             this.dgvAlumnos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlumnos.Location = new System.Drawing.Point(258, 311);
+            this.dgvAlumnos.Location = new System.Drawing.Point(241, 310);
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.Size = new System.Drawing.Size(350, 212);
             this.dgvAlumnos.TabIndex = 34;
@@ -379,7 +380,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.panel3.Controls.Add(this.lbl);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,13 +394,12 @@
             // 
             this.lblDescripcionPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescripcionPerfil.BackColor = System.Drawing.Color.White;
+            this.lblDescripcionPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.lblDescripcionPerfil.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcionPerfil.Location = new System.Drawing.Point(192, 126);
             this.lblDescripcionPerfil.Name = "lblDescripcionPerfil";
             this.lblDescripcionPerfil.Size = new System.Drawing.Size(323, 115);
             this.lblDescripcionPerfil.TabIndex = 29;
-            this.lblDescripcionPerfil.Text = "label para conectar un perfil de la base de datos con el proyecto";
             this.lblDescripcionPerfil.Click += new System.EventHandler(this.lblDescripcionPerfil_Click);
             // 
             // panel4
@@ -410,7 +410,7 @@
             this.panel4.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel4.Location = new System.Drawing.Point(521, 124);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(107, 115);
+            this.panel4.Size = new System.Drawing.Size(115, 115);
             this.panel4.TabIndex = 43;
             // 
             // panel5
@@ -433,15 +433,29 @@
             this.panel6.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.panel6.Location = new System.Drawing.Point(642, 124);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(107, 115);
+            this.panel6.Size = new System.Drawing.Size(112, 115);
             this.panel6.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(322, 173);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(72, 16);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "2021-09-10";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // frmIngresoNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(199)))), ((int)(((byte)(137)))));
             this.ClientSize = new System.Drawing.Size(876, 534);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
@@ -520,5 +534,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label13;
     }
 }

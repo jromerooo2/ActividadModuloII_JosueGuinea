@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: sql10.freemysqlhosting.net
--- Generation Time: Jul 24, 2021 at 06:23 AM
--- Server version: 5.5.62-0ubuntu0.14.04.1
--- PHP Version: 7.0.33-0ubuntu0.16.04.16
+-- Host: 127.0.0.1
+-- Generation Time: Aug 10, 2021 at 05:44 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sql10426558`
+-- Database: `dbgestionnotas2`
 --
 
 -- --------------------------------------------------------
@@ -96,48 +95,6 @@ INSERT INTO `tbestados` (`idEstado`, `estado`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbgeneros`
---
-
-CREATE TABLE `tbgeneros` (
-  `idGenero` int(11) NOT NULL,
-  `genero` char(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbgeneros`
---
-
-INSERT INTO `tbgeneros` (`idGenero`, `genero`) VALUES
-(1, 'F'),
-(2, 'M');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbgrados`
---
-
-CREATE TABLE `tbgrados` (
-  `idGrados` int(11) NOT NULL,
-  `grados` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbgrados`
---
-
-INSERT INTO `tbgrados` (`idGrados`, `grados`) VALUES
-(1, '7°grado'),
-(2, '8° grado'),
-(3, '9° grado'),
-(4, '1er año bachillerato'),
-(5, '2do año bachillerato'),
-(6, '3er año bachillerato');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbmaestros`
 --
 
@@ -206,17 +163,6 @@ INSERT INTO `tbnotas` (`idNota`, `idAlumno`, `idMateria`, `idPeriodo`, `nota`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbperfiles`
---
-
-CREATE TABLE `tbperfiles` (
-  `idPerfil` int(11) NOT NULL,
-  `perfil` varchar(300) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbperiodos`
 --
 
@@ -234,25 +180,6 @@ INSERT INTO `tbperiodos` (`idPeriodo`, `periodo`) VALUES
 (2, 'Segundo Periodo'),
 (3, 'Tercer Periodo'),
 (4, 'Cuarto Periodo');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbseccion`
---
-
-CREATE TABLE `tbseccion` (
-  `idSeccion` int(11) NOT NULL,
-  `es_tecnica` varchar(3) NOT NULL,
-  `es_academica` varchar(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `tbseccion`
---
-
-INSERT INTO `tbseccion` (`idSeccion`, `es_tecnica`, `es_academica`) VALUES
-(24, 'A-1', 'A');
 
 -- --------------------------------------------------------
 
@@ -303,18 +230,6 @@ ALTER TABLE `tbestados`
   ADD PRIMARY KEY (`idEstado`);
 
 --
--- Indexes for table `tbgeneros`
---
-ALTER TABLE `tbgeneros`
-  ADD PRIMARY KEY (`idGenero`);
-
---
--- Indexes for table `tbgrados`
---
-ALTER TABLE `tbgrados`
-  ADD PRIMARY KEY (`idGrados`);
-
---
 -- Indexes for table `tbmaestros`
 --
 ALTER TABLE `tbmaestros`
@@ -337,22 +252,10 @@ ALTER TABLE `tbnotas`
   ADD KEY `fk_nota_periodo` (`idPeriodo`);
 
 --
--- Indexes for table `tbperfiles`
---
-ALTER TABLE `tbperfiles`
-  ADD PRIMARY KEY (`idPerfil`);
-
---
 -- Indexes for table `tbperiodos`
 --
 ALTER TABLE `tbperiodos`
   ADD PRIMARY KEY (`idPeriodo`);
-
---
--- Indexes for table `tbseccion`
---
-ALTER TABLE `tbseccion`
-  ADD PRIMARY KEY (`idSeccion`);
 
 --
 -- Indexes for table `tbusuarios`
@@ -369,61 +272,49 @@ ALTER TABLE `tbusuarios`
 --
 ALTER TABLE `tbalumnos`
   MODIFY `idAlumno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
 --
 -- AUTO_INCREMENT for table `tbespecialidad`
 --
 ALTER TABLE `tbespecialidad`
   MODIFY `idEspecialidad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT for table `tbestados`
 --
 ALTER TABLE `tbestados`
   MODIFY `idEstado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT for table `tbgeneros`
---
-ALTER TABLE `tbgeneros`
-  MODIFY `idGenero` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `tbgrados`
---
-ALTER TABLE `tbgrados`
-  MODIFY `idGrados` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `tbmaestros`
 --
 ALTER TABLE `tbmaestros`
   MODIFY `idMaestro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- AUTO_INCREMENT for table `tbmaterias`
 --
 ALTER TABLE `tbmaterias`
   MODIFY `idMateria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
 --
 -- AUTO_INCREMENT for table `tbnotas`
 --
 ALTER TABLE `tbnotas`
   MODIFY `idNota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
---
--- AUTO_INCREMENT for table `tbperfiles`
---
-ALTER TABLE `tbperfiles`
-  MODIFY `idPerfil` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tbperiodos`
 --
 ALTER TABLE `tbperiodos`
   MODIFY `idPeriodo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
---
--- AUTO_INCREMENT for table `tbseccion`
---
-ALTER TABLE `tbseccion`
-  MODIFY `idSeccion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- AUTO_INCREMENT for table `tbusuarios`
 --
 ALTER TABLE `tbusuarios`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- Constraints for dumped tables
 --
@@ -432,8 +323,8 @@ ALTER TABLE `tbusuarios`
 -- Constraints for table `tbalumnos`
 --
 ALTER TABLE `tbalumnos`
-  ADD CONSTRAINT `fk_especialidad` FOREIGN KEY (`idEspecialidad`) REFERENCES `tbespecialidad` (`idEspecialidad`),
-  ADD CONSTRAINT `FK_IdEstado` FOREIGN KEY (`idEstado`) REFERENCES `tbestados` (`idEstado`);
+  ADD CONSTRAINT `FK_IdEstado` FOREIGN KEY (`idEstado`) REFERENCES `tbestados` (`idEstado`),
+  ADD CONSTRAINT `fk_especialidad` FOREIGN KEY (`idEspecialidad`) REFERENCES `tbespecialidad` (`idEspecialidad`);
 
 --
 -- Constraints for table `tbmaestros`
