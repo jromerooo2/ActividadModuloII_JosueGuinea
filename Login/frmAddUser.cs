@@ -66,5 +66,10 @@ namespace Login
         {
 
         }
+
+        private void frmAddUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
