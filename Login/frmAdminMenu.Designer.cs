@@ -49,13 +49,16 @@
             // 
             // btnIngresarPerfil
             // 
-            btnIngresarPerfil.BackColor = System.Drawing.SystemColors.Info;
-            btnIngresarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnIngresarPerfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnIngresarPerfil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnIngresarPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            btnIngresarPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            btnIngresarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnIngresarPerfil.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold);
-            btnIngresarPerfil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            btnIngresarPerfil.ForeColor = System.Drawing.Color.White;
             btnIngresarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnIngresarPerfil.Location = new System.Drawing.Point(403, 350);
-            btnIngresarPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btnIngresarPerfil.Margin = new System.Windows.Forms.Padding(2);
             btnIngresarPerfil.Name = "btnIngresarPerfil";
             btnIngresarPerfil.RightToLeft = System.Windows.Forms.RightToLeft.No;
             btnIngresarPerfil.Size = new System.Drawing.Size(196, 80);
@@ -67,13 +70,16 @@
             // 
             // btnDocentes
             // 
-            btnDocentes.BackColor = System.Drawing.SystemColors.Info;
-            btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnDocentes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnDocentes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnDocentes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            btnDocentes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            btnDocentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnDocentes.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold);
-            btnDocentes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            btnDocentes.ForeColor = System.Drawing.Color.White;
             btnDocentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnDocentes.Location = new System.Drawing.Point(273, 212);
-            btnDocentes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btnDocentes.Margin = new System.Windows.Forms.Padding(2);
             btnDocentes.Name = "btnDocentes";
             btnDocentes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             btnDocentes.Size = new System.Drawing.Size(196, 80);
@@ -85,13 +91,16 @@
             // 
             // btnAlumnos
             // 
-            btnAlumnos.BackColor = System.Drawing.SystemColors.Info;
-            btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnAlumnos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnAlumnos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            btnAlumnos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            btnAlumnos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            btnAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnAlumnos.Font = new System.Drawing.Font("Century Gothic", 9.8F, System.Drawing.FontStyle.Bold);
-            btnAlumnos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            btnAlumnos.ForeColor = System.Drawing.Color.White;
             btnAlumnos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnAlumnos.Location = new System.Drawing.Point(575, 212);
-            btnAlumnos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btnAlumnos.Margin = new System.Windows.Forms.Padding(2);
             btnAlumnos.Name = "btnAlumnos";
             btnAlumnos.RightToLeft = System.Windows.Forms.RightToLeft.No;
             btnAlumnos.Size = new System.Drawing.Size(196, 80);
@@ -104,10 +113,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 24.2F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(407, 23);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(382, 31);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(288, 39);
@@ -116,7 +125,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(137)))));
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.button4);
@@ -124,7 +133,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(-2, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(237, 580);
             this.panel1.TabIndex = 41;
@@ -160,7 +169,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Location = new System.Drawing.Point(16, 538);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(147, 29);
             this.button4.TabIndex = 10;
@@ -171,7 +180,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(34, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,15 +190,15 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.2F, System.Drawing.FontStyle.Bold);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(20, 184);
+            this.label8.Location = new System.Drawing.Point(50, 174);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 18);
+            this.label8.Size = new System.Drawing.Size(96, 19);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Bienvenido,";
+            this.label8.Text = "Bienvenido";
             // 
             // label1
             // 
@@ -207,6 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(817, 584);
             this.Controls.Add(btnIngresarPerfil);
             this.Controls.Add(btnAlumnos);
@@ -215,7 +225,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(btnDocentes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAdminMenu";
             this.Text = "frmAdminMenu";
             this.panel1.ResumeLayout(false);
