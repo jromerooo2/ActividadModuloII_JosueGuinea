@@ -60,11 +60,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombres);
-            this.groupBox1.Location = new System.Drawing.Point(16, 25);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(751, 198);
+            this.groupBox1.Size = new System.Drawing.Size(563, 161);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información del Docente";
@@ -72,30 +70,27 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 100);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(27, 81);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 17);
+            this.label10.Size = new System.Drawing.Size(60, 13);
             this.label10.TabIndex = 11;
             this.label10.Text = "Id Docente";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(39, 121);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtID.Location = new System.Drawing.Point(29, 98);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(245, 22);
+            this.txtID.Size = new System.Drawing.Size(185, 20);
             this.txtID.TabIndex = 10;
             // 
             // cmbMateria
             // 
             this.cmbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMateria.FormattingEnabled = true;
-            this.cmbMateria.Location = new System.Drawing.Point(293, 118);
-            this.cmbMateria.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMateria.Location = new System.Drawing.Point(220, 96);
             this.cmbMateria.Name = "cmbMateria";
-            this.cmbMateria.Size = new System.Drawing.Size(165, 24);
+            this.cmbMateria.Size = new System.Drawing.Size(125, 21);
             this.cmbMateria.TabIndex = 6;
             this.cmbMateria.SelectedIndexChanged += new System.EventHandler(this.cmbMateria_SelectedIndexChanged);
             this.cmbMateria.Click += new System.EventHandler(this.cmbMateria_Click);
@@ -103,56 +98,50 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(291, 97);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(218, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 17);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Materia";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(289, 38);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(217, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 17);
+            this.label3.Size = new System.Drawing.Size(110, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Apellidos del Docente";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(26, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 17);
+            this.label1.Size = new System.Drawing.Size(110, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombres del Docente";
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(293, 58);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellidos.Location = new System.Drawing.Point(220, 47);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(245, 22);
+            this.txtApellidos.Size = new System.Drawing.Size(185, 20);
             this.txtApellidos.TabIndex = 2;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(39, 58);
-            this.txtNombres.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombres.Location = new System.Drawing.Point(29, 47);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(245, 22);
+            this.txtNombres.Size = new System.Drawing.Size(185, 20);
             this.txtNombres.TabIndex = 1;
             // 
             // dgvDocentes
             // 
             this.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDocentes.Location = new System.Drawing.Point(16, 242);
-            this.dgvDocentes.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDocentes.Location = new System.Drawing.Point(12, 187);
             this.dgvDocentes.Name = "dgvDocentes";
-            this.dgvDocentes.Size = new System.Drawing.Size(1184, 256);
+            this.dgvDocentes.Size = new System.Drawing.Size(888, 208);
             this.dgvDocentes.TabIndex = 19;
             this.dgvDocentes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocentes_CellClick);
             // 
@@ -164,88 +153,117 @@
             this.groupBox2.Controls.Add(this.btnActualizarGrid);
             this.groupBox2.Controls.Add(this.btnAgregarDoc);
             this.groupBox2.Controls.Add(this.BtnConectar);
-            this.groupBox2.Location = new System.Drawing.Point(787, 37);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(590, 20);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(413, 198);
+            this.groupBox2.Size = new System.Drawing.Size(310, 161);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Información del empleado";
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(36, 139);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAddUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAddUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnAddUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUser.ForeColor = System.Drawing.Color.White;
+            this.btnAddUser.Location = new System.Drawing.Point(27, 113);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(148, 47);
+            this.btnAddUser.Size = new System.Drawing.Size(111, 38);
             this.btnAddUser.TabIndex = 12;
             this.btnAddUser.Text = "Agregar un Usuario";
-            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // btnEliminarEmpl
             // 
-            this.btnEliminarEmpl.Location = new System.Drawing.Point(212, 85);
-            this.btnEliminarEmpl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarEmpl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnEliminarEmpl.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnEliminarEmpl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnEliminarEmpl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnEliminarEmpl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarEmpl.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarEmpl.Location = new System.Drawing.Point(159, 69);
             this.btnEliminarEmpl.Name = "btnEliminarEmpl";
-            this.btnEliminarEmpl.Size = new System.Drawing.Size(148, 47);
+            this.btnEliminarEmpl.Size = new System.Drawing.Size(111, 38);
             this.btnEliminarEmpl.TabIndex = 14;
             this.btnEliminarEmpl.Text = "Eliminar Docente";
-            this.btnEliminarEmpl.UseVisualStyleBackColor = true;
+            this.btnEliminarEmpl.UseVisualStyleBackColor = false;
             this.btnEliminarEmpl.Click += new System.EventHandler(this.btnEliminarEmpl_Click);
             // 
             // btnActualizarEmpl
             // 
-            this.btnActualizarEmpl.Location = new System.Drawing.Point(36, 85);
-            this.btnActualizarEmpl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarEmpl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarEmpl.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarEmpl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnActualizarEmpl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnActualizarEmpl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarEmpl.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarEmpl.Location = new System.Drawing.Point(27, 69);
             this.btnActualizarEmpl.Name = "btnActualizarEmpl";
-            this.btnActualizarEmpl.Size = new System.Drawing.Size(148, 47);
+            this.btnActualizarEmpl.Size = new System.Drawing.Size(111, 38);
             this.btnActualizarEmpl.TabIndex = 11;
             this.btnActualizarEmpl.Text = "Actualizar Docente";
-            this.btnActualizarEmpl.UseVisualStyleBackColor = true;
+            this.btnActualizarEmpl.UseVisualStyleBackColor = false;
             this.btnActualizarEmpl.Click += new System.EventHandler(this.btnActualizarEmpl_Click);
             // 
             // btnActualizarGrid
             // 
-            this.btnActualizarGrid.Location = new System.Drawing.Point(212, 31);
-            this.btnActualizarGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarGrid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarGrid.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnActualizarGrid.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnActualizarGrid.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnActualizarGrid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarGrid.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarGrid.Location = new System.Drawing.Point(159, 25);
             this.btnActualizarGrid.Name = "btnActualizarGrid";
-            this.btnActualizarGrid.Size = new System.Drawing.Size(148, 47);
+            this.btnActualizarGrid.Size = new System.Drawing.Size(111, 38);
             this.btnActualizarGrid.TabIndex = 13;
             this.btnActualizarGrid.Text = "Actualizar grid de datos";
-            this.btnActualizarGrid.UseVisualStyleBackColor = true;
+            this.btnActualizarGrid.UseVisualStyleBackColor = false;
             // 
             // btnAgregarDoc
             // 
-            this.btnAgregarDoc.Location = new System.Drawing.Point(36, 31);
-            this.btnAgregarDoc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAgregarDoc.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.btnAgregarDoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.btnAgregarDoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.btnAgregarDoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarDoc.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarDoc.Location = new System.Drawing.Point(27, 25);
             this.btnAgregarDoc.Name = "btnAgregarDoc";
-            this.btnAgregarDoc.Size = new System.Drawing.Size(148, 47);
+            this.btnAgregarDoc.Size = new System.Drawing.Size(111, 38);
             this.btnAgregarDoc.TabIndex = 10;
             this.btnAgregarDoc.Text = "Agregar Docente";
-            this.btnAgregarDoc.UseVisualStyleBackColor = true;
+            this.btnAgregarDoc.UseVisualStyleBackColor = false;
             this.btnAgregarDoc.Click += new System.EventHandler(this.btnAgregarEmpl_Click);
             // 
             // BtnConectar
             // 
-            this.BtnConectar.Location = new System.Drawing.Point(212, 139);
-            this.BtnConectar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.BtnConectar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.BtnConectar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.BtnConectar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(130)))), ((int)(((byte)(134)))));
+            this.BtnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConectar.ForeColor = System.Drawing.Color.White;
+            this.BtnConectar.Location = new System.Drawing.Point(159, 113);
             this.BtnConectar.Name = "BtnConectar";
-            this.BtnConectar.Size = new System.Drawing.Size(148, 47);
+            this.BtnConectar.Size = new System.Drawing.Size(111, 38);
             this.BtnConectar.TabIndex = 15;
             this.BtnConectar.Text = "Conectar";
-            this.BtnConectar.UseVisualStyleBackColor = true;
+            this.BtnConectar.UseVisualStyleBackColor = false;
             // 
             // frmRegistrarMaestros
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1219, 513);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(137)))));
+            this.ClientSize = new System.Drawing.Size(914, 406);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvDocentes);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRegistrarMaestros";
             this.Text = "frmRegistrarMaestros";
             this.Load += new System.EventHandler(this.frmRegistrarMaestros_Load);
