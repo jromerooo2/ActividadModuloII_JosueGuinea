@@ -16,5 +16,10 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void frmNotasTecnicas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

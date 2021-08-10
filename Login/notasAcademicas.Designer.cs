@@ -81,6 +81,7 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -135,10 +136,10 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.panel9.BackColor = System.Drawing.Color.YellowGreen;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label21);
-            this.panel9.Location = new System.Drawing.Point(465, 454);
+            this.panel9.Location = new System.Drawing.Point(478, 480);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(1);
             this.panel9.Size = new System.Drawing.Size(308, 37);
@@ -156,20 +157,20 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.panel8.BackColor = System.Drawing.Color.YellowGreen;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label27);
-            this.panel8.Location = new System.Drawing.Point(45, 454);
+            this.panel8.Location = new System.Drawing.Point(25, 480);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(1);
-            this.panel8.Size = new System.Drawing.Size(406, 37);
+            this.panel8.Size = new System.Drawing.Size(438, 37);
             this.panel8.TabIndex = 110;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(325, 10);
+            this.label27.Location = new System.Drawing.Point(324, 10);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(64, 15);
             this.label27.TabIndex = 21;
@@ -177,11 +178,11 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(248)))), ((int)(((byte)(198)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label19);
             this.panel5.Controls.Add(this.label20);
-            this.panel5.Location = new System.Drawing.Point(622, 338);
+            this.panel5.Location = new System.Drawing.Point(635, 364);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(151, 110);
             this.panel5.TabIndex = 115;
@@ -199,20 +200,22 @@
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.Location = new System.Drawing.Point(36, 28);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(19, 15);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(87, 45);
+            this.label20.Size = new System.Drawing.Size(108, 73);
             this.label20.TabIndex = 25;
             this.label20.Text = "Porcentaje obtenido:\r\n20%\r\n";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(248)))), ((int)(((byte)(198)))));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label22);
             this.panel6.Controls.Add(this.label23);
-            this.panel6.Location = new System.Drawing.Point(622, 222);
+            this.panel6.Location = new System.Drawing.Point(635, 248);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(151, 110);
             this.panel6.TabIndex = 113;
@@ -230,20 +233,22 @@
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.Location = new System.Drawing.Point(36, 28);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(20, 18);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 45);
+            this.label23.Size = new System.Drawing.Size(108, 73);
             this.label23.TabIndex = 25;
             this.label23.Text = "Porcentaje obtenido:\r\n20%\r\n";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(246)))), ((int)(((byte)(140)))));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label24);
             this.panel7.Controls.Add(this.label25);
-            this.panel7.Location = new System.Drawing.Point(465, 338);
+            this.panel7.Location = new System.Drawing.Point(478, 364);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(151, 110);
             this.panel7.TabIndex = 114;
@@ -261,10 +266,12 @@
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(246)))), ((int)(((byte)(140)))));
-            this.label25.Location = new System.Drawing.Point(36, 28);
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(20, 14);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(87, 45);
+            this.label25.Size = new System.Drawing.Size(108, 73);
             this.label25.TabIndex = 25;
             this.label25.Text = "Porcentaje de valoración:\r\n25%\r\n";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -280,11 +287,11 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(246)))), ((int)(((byte)(140)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(465, 222);
+            this.panel3.Location = new System.Drawing.Point(478, 248);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(151, 110);
             this.panel3.TabIndex = 108;
@@ -302,33 +309,37 @@
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(246)))), ((int)(((byte)(140)))));
-            this.label14.Location = new System.Drawing.Point(36, 28);
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(21, 19);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(87, 45);
+            this.label14.Size = new System.Drawing.Size(108, 73);
             this.label14.TabIndex = 25;
             this.label14.Text = "Porcentaje de valoración:\r\n25%\r\n";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(45, 222);
+            this.panel2.Location = new System.Drawing.Point(25, 248);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(406, 110);
+            this.panel2.Size = new System.Drawing.Size(439, 110);
             this.panel2.TabIndex = 107;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 18);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(367, 78);
+            this.label1.Size = new System.Drawing.Size(433, 75);
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label12
             // 
@@ -340,23 +351,25 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.label17);
-            this.panel4.Location = new System.Drawing.Point(45, 338);
+            this.panel4.Location = new System.Drawing.Point(25, 364);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(406, 110);
+            this.panel4.Size = new System.Drawing.Size(439, 110);
             this.panel4.TabIndex = 111;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(22, 18);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(2, 9);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(367, 78);
+            this.label16.Size = new System.Drawing.Size(433, 90);
             this.label16.TabIndex = 2;
             this.label16.Text = resources.GetString("label16.Text");
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label17
             // 
@@ -368,51 +381,55 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(155)))), ((int)(((byte)(74)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(46, 179);
+            this.panel1.Location = new System.Drawing.Point(25, 198);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(1);
-            this.panel1.Size = new System.Drawing.Size(728, 37);
+            this.panel1.Size = new System.Drawing.Size(762, 44);
             this.panel1.TabIndex = 106;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(402, 14);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(561, 21);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.Size = new System.Drawing.Size(96, 17);
             this.label11.TabIndex = 23;
             this.label11.Text = "Josue Guinea";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(402, 1);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(573, 4);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.Size = new System.Drawing.Size(66, 17);
             this.label10.TabIndex = 22;
             this.label10.Text = "Profesor:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 14);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(14, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 13);
+            this.label9.Size = new System.Drawing.Size(175, 17);
             this.label9.TabIndex = 21;
             this.label9.Text = "Desarrollo de aplicaciones";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 1);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(14, 4);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.Size = new System.Drawing.Size(58, 17);
             this.label8.TabIndex = 20;
             this.label8.Text = "Modulo:";
             // 
@@ -464,7 +481,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(641, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(602, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(179, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -475,7 +492,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(388, 143);
+            this.label33.Location = new System.Drawing.Point(464, 134);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(78, 15);
             this.label33.TabIndex = 137;
@@ -484,7 +501,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(290, 143);
+            this.label34.Location = new System.Drawing.Point(370, 135);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(29, 13);
             this.label34.TabIndex = 136;
@@ -492,7 +509,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -500,7 +517,7 @@
             "Matematicas",
             "Ciencias",
             "Sociales"});
-            this.comboBox1.Location = new System.Drawing.Point(178, 98);
+            this.comboBox1.Location = new System.Drawing.Point(158, 110);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(155, 21);
             this.comboBox1.TabIndex = 135;
@@ -509,7 +526,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(507, 98);
+            this.label32.Location = new System.Drawing.Point(464, 105);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(79, 15);
             this.label32.TabIndex = 134;
@@ -519,7 +536,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(507, 65);
+            this.label7.Location = new System.Drawing.Point(461, 71);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 15);
             this.label7.TabIndex = 133;
@@ -529,7 +546,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(507, 35);
+            this.label18.Location = new System.Drawing.Point(468, 41);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(71, 15);
             this.label18.TabIndex = 132;
@@ -539,7 +556,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(175, 32);
+            this.label35.Location = new System.Drawing.Point(135, 39);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(200, 15);
             this.label35.TabIndex = 130;
@@ -549,7 +566,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(210, 66);
+            this.label36.Location = new System.Drawing.Point(171, 73);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(0, 15);
             this.label36.TabIndex = 129;
@@ -557,7 +574,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(82, 32);
+            this.label37.Location = new System.Drawing.Point(43, 39);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(60, 13);
             this.label37.TabIndex = 128;
@@ -566,7 +583,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(409, 98);
+            this.label38.Location = new System.Drawing.Point(370, 106);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(40, 13);
             this.label38.TabIndex = 127;
@@ -575,7 +592,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(409, 65);
+            this.label39.Location = new System.Drawing.Point(370, 72);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(28, 13);
             this.label39.TabIndex = 126;
@@ -584,7 +601,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(409, 35);
+            this.label40.Location = new System.Drawing.Point(370, 42);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(43, 13);
             this.label40.TabIndex = 125;
@@ -593,7 +610,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(87, 106);
+            this.label42.Location = new System.Drawing.Point(43, 113);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(45, 13);
             this.label42.TabIndex = 123;
@@ -602,18 +619,29 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(87, 67);
+            this.label43.Location = new System.Drawing.Point(43, 75);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(51, 13);
             this.label43.TabIndex = 122;
             this.label43.Text = "Docente:";
             // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(188, 74);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(95, 15);
+            this.label29.TabIndex = 138;
+            this.label29.Text = "Josue Guinea";
+            // 
             // notasAcademicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(200)))), ((int)(((byte)(137)))));
-            this.ClientSize = new System.Drawing.Size(820, 520);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(255)))), ((int)(((byte)(180)))));
+            this.ClientSize = new System.Drawing.Size(811, 542);
+            this.Controls.Add(this.label29);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.comboBox1);
@@ -729,5 +757,6 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label29;
     }
 }
